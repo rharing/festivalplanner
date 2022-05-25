@@ -7,4 +7,8 @@ class BKSEvent {
     private String wie
     private DateTime start
     private DateTime end
+
+    public boolean isPodiumEvent(){
+        return podium != null
+    }
 }

@@ -60,7 +60,7 @@ class EventDTO {
         def timeFields = dateTime.split(":")
         Optional<DateTime> result = Optional.empty()
         if (timeFields.length == 2) {
-            DateTime when = new DateTime(datum)
+            DateTime when = new DateTime(datum).withTimeAtStartOfDay()
             when = when.plusHours(Integer.parseInt(timeFields[0]))
             when = when.plusMinutes(Integer.parseInt(timeFields[1]))
             result = Optional.of(when)
