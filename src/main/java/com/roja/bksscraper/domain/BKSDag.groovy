@@ -31,5 +31,9 @@ class BKSDag {
             }
 
         }
+
+        if (currentPodium != null){
+            podiums.add(currentPodium)
+        }
     }
 }
