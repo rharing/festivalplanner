@@ -19,7 +19,7 @@ public class JSONReader {
 
         days.entrySet().each { Integer dagIndex ->
             BKSDag bksDag = new BKSDag(dagIndex, days.get(dagIndex))
-
+             // dag 3 wil niet goed ge-extract worden dus doe ik die maar handmatig
         }
         for (int i = 0; i < days.entrySet(); i++) {
             print(days[i])

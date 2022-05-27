@@ -1,5 +1,4 @@
 package com.roja.bksscraper.domain
-
 import com.roja.bksscraper.dto.BKSSheet
 import com.roja.bksscraper.dto.EventDTO
 import org.joda.time.DateTime
@@ -8,6 +7,9 @@ class BKSDag {
 
     private DateTime datum
     private List<Podium> podiums = []
+
+    BKSDag() {
+    }
 
     BKSDag(Integer dagIndex, List<BKSSheet> sheets) {
         Podium currentPodium
