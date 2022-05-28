@@ -2,8 +2,6 @@ package com.roja.bksscraper.dto
 
 import com.fasterxml.jackson.annotation.JsonProperty
 
-import java.util.List
-
 class BKSSheet {
 
     @JsonProperty("extraction_method")
@@ -18,7 +16,7 @@ class BKSSheet {
     private String height
     @JsonProperty("data")
 
-    private List<List<EventDTO>> data
+    private List<List<EventInputFromPDFDTO>> data
 
     BKSSheet() {
     }

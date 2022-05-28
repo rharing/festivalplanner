@@ -1,5 +1,6 @@
 package com.roja.bksscraper.domain
 
+import com.fasterxml.jackson.annotation.JsonBackReference
 import com.roja.bksscraper.PodiumName
 import com.roja.bksscraper.domain.BKSEvent
 import org.apache.commons.collections.list.TreeList

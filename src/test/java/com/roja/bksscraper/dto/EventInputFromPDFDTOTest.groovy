@@ -1,15 +1,15 @@
 package com.roja.bksscraper.dto
 
-import com.roja.bksscraper.domain.BKSEvent
+
 import org.joda.time.DateTime
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class EventDTOTest extends Specification {
+class EventInputFromPDFDTOTest extends Specification {
     @Unroll
     def shouldParseText(){
         given:
-         EventDTO eventDTO = new EventDTO()
+         EventInputFromPDFDTO eventDTO = new EventInputFromPDFDTO()
         DateTime dateTime = new DateTime(2022, 6,10,0,0,0)
         expect:
         eventDTO.setText(_tekst)
@@ -33,7 +33,7 @@ class EventDTOTest extends Specification {
 
     def "should see event data"(){
         given:
-        EventDTO eventDTO = new EventDTO()
+        EventInputFromPDFDTO eventDTO = new EventInputFromPDFDTO()
         DateTime dateTime = new DateTime(2022, 6,10,0,0,0)
         eventDTO.setText("18:15 - 19:15\rMAVIS\rSTAPLES")
         when:

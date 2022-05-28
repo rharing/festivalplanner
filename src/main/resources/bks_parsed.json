@@ -1,0 +1,1027 @@
+[ {
+  "dag" : 1654812000000,
+  "when" : "2022-06-10",
+  "podiums" : [ {
+    "name" : "ONE",
+    "events" : [ {
+      "start" : 1654877700000,
+      "startWhen" : "2022-06-10 18:15",
+      "endWhen" : "2022-06-10 19:15",
+      "end" : 1654881300000,
+      "wie" : "MAVIS\rSTAPLES"
+    }, {
+      "start" : 1654884900000,
+      "startWhen" : "2022-06-10 20:15",
+      "endWhen" : "2022-06-10 21:15",
+      "end" : 1654888500000,
+      "wie" : "LEON\rBRIDGES"
+    }, {
+      "start" : 1654893000000,
+      "startWhen" : "2022-06-10 22:30",
+      "endWhen" : "2022-06-10 23:45",
+      "end" : 1654897500000,
+      "wie" : "ALT-J"
+    } ]
+  }, {
+    "name" : "TWO",
+    "events" : [ {
+      "start" : 1654864200000,
+      "startWhen" : "2022-06-10 14:30",
+      "endWhen" : "2022-06-10 15:15",
+      "end" : 1654866900000,
+      "wie" : "WIES"
+    }, {
+      "start" : 1654868700000,
+      "startWhen" : "2022-06-10 15:45",
+      "endWhen" : "2022-06-10 16:30",
+      "end" : 1654871400000,
+      "wie" : "MEROL"
+    }, {
+      "start" : 1654874100000,
+      "startWhen" : "2022-06-10 17:15",
+      "endWhen" : "2022-06-10 18:15",
+      "end" : 1654877700000,
+      "wie" : "ALTIN\rGÃœN"
+    }, {
+      "start" : 1654881300000,
+      "startWhen" : "2022-06-10 19:15",
+      "endWhen" : "2022-06-10 20:15",
+      "end" : 1654884900000,
+      "wie" : "SIGRID"
+    }, {
+      "start" : 1654888500000,
+      "startWhen" : "2022-06-10 21:15",
+      "endWhen" : "2022-06-10 22:20",
+      "end" : 1654892400000,
+      "wie" : "JESSIE\rWARE"
+    }, {
+      "start" : 1654897500000,
+      "startWhen" : "2022-06-10 23:45",
+      "endWhen" : "2022-06-10 01:00",
+      "end" : 1654815600000,
+      "wie" : "JAMIE\rXX"
+    } ]
+  }, {
+    "name" : "SECRET",
+    "events" : [ {
+      "start" : 1654812000000,
+      "startWhen" : "2022-06-10 00:00",
+      "endWhen" : "2022-06-10 02:00",
+      "end" : 1654819200000,
+      "wie" : "ELIAS MAZIAN\rDJ SET"
+    }, {
+      "start" : 1654819200000,
+      "startWhen" : "2022-06-10 02:00",
+      "endWhen" : "2022-06-10 04:00",
+      "end" : 1654826400000,
+      "wie" : "JOHN TALABOT\rDJ SET"
+    }, {
+      "start" : 1654864200000,
+      "startWhen" : "2022-06-10 14:30",
+      "endWhen" : "2022-06-10 15:15",
+      "end" : 1654866900000,
+      "wie" : "GIANT\rROOKS"
+    }, {
+      "start" : 1654868700000,
+      "startWhen" : "2022-06-10 15:45",
+      "endWhen" : "2022-06-10 16:30",
+      "end" : 1654871400000,
+      "wie" : "4B2M"
+    }, {
+      "start" : 1654873200000,
+      "startWhen" : "2022-06-10 17:00",
+      "endWhen" : "2022-06-10 17:45",
+      "end" : 1654875900000,
+      "wie" : "FAYE\rWEBSTER"
+    }, {
+      "start" : 1654878600000,
+      "startWhen" : "2022-06-10 18:30",
+      "endWhen" : "2022-06-10 19:15",
+      "end" : 1654881300000,
+      "wie" : "ICEAGE"
+    }, {
+      "start" : 1654884000000,
+      "startWhen" : "2022-06-10 20:00",
+      "endWhen" : "2022-06-10 20:45",
+      "end" : 1654886700000,
+      "wie" : "GENESIS\rOWUSU"
+    }, {
+      "start" : 1654889400000,
+      "startWhen" : "2022-06-10 21:30",
+      "endWhen" : "2022-06-10 22:15",
+      "end" : 1654892100000,
+      "wie" : "SAD\rNIGHT\rDYNAMITE"
+    }, {
+      "start" : 1654894800000,
+      "startWhen" : "2022-06-10 23:00",
+      "endWhen" : "2022-06-10 00:00",
+      "end" : 1654812000000,
+      "wie" : "DIIV"
+    } ]
+  }, {
+    "name" : "CASBAH",
+    "events" : [ {
+      "start" : 1654875900000,
+      "startWhen" : "2022-06-10 17:45",
+      "endWhen" : "2022-06-10 18:30",
+      "end" : 1654878600000,
+      "wie" : "YASMIN\rWILLIAMS"
+    }, {
+      "start" : 1654881300000,
+      "startWhen" : "2022-06-10 19:15",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "GUSTAF"
+    }, {
+      "start" : 1654886700000,
+      "startWhen" : "2022-06-10 20:45",
+      "endWhen" : "2022-06-10 21:30",
+      "end" : 1654889400000,
+      "wie" : "TALK\rSHOW"
+    }, {
+      "start" : 1654892100000,
+      "startWhen" : "2022-06-10 22:15",
+      "endWhen" : "2022-06-10 23:00",
+      "end" : 1654894800000,
+      "wie" : "TRAM-\rHAUS"
+    } ]
+  }, {
+    "name" : "FLOOR",
+    "events" : [ {
+      "start" : 1654815600000,
+      "startWhen" : "2022-06-10 01:00",
+      "endWhen" : "2022-06-10 02:00",
+      "end" : 1654819200000,
+      "wie" : "BLCK\rMAMBA"
+    }, {
+      "start" : 1654821000000,
+      "startWhen" : "2022-06-10 02:30",
+      "endWhen" : "2022-06-10 03:30",
+      "end" : 1654824600000,
+      "wie" : "VERA\rSIEMONS"
+    }, {
+      "start" : 1654867800000,
+      "startWhen" : "2022-06-10 15:30",
+      "endWhen" : "2022-06-10 16:30",
+      "end" : 1654871400000,
+      "wie" : "JASPER V\r(ALTIN GÃœN\rDJ SET)"
+    }, {
+      "start" : 1654873200000,
+      "startWhen" : "2022-06-10 17:00",
+      "endWhen" : "2022-06-10 18:00",
+      "end" : 1654876800000,
+      "wie" : "MAXIMOTO"
+    }, {
+      "start" : 1654880400000,
+      "startWhen" : "2022-06-10 19:00",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "ELVILIA"
+    }, {
+      "start" : 1654887600000,
+      "startWhen" : "2022-06-10 21:00",
+      "endWhen" : "2022-06-10 22:00",
+      "end" : 1654891200000,
+      "wie" : "THEME TIME\rGOLDEN HOUR: KC\rTHE FUNKAHOLIC\r(NY DISCO SET)"
+    }, {
+      "start" : 1654893000000,
+      "startWhen" : "2022-06-10 22:30",
+      "endWhen" : "2022-06-10 23:30",
+      "end" : 1654896600000,
+      "wie" : "TJADE"
+    } ]
+  }, {
+    "name" : "CONEY",
+    "events" : [ {
+      "start" : 1654812000000,
+      "startWhen" : "2022-06-10 00:00",
+      "endWhen" : "2022-06-10 02:00",
+      "end" : 1654819200000,
+      "wie" : "ROSE MARY"
+    }, {
+      "start" : 1654819200000,
+      "startWhen" : "2022-06-10 02:00",
+      "endWhen" : "2022-06-10 04:00",
+      "end" : 1654826400000,
+      "wie" : "ALFRED ANDERS"
+    }, {
+      "start" : 1654862400000,
+      "startWhen" : "2022-06-10 14:00",
+      "endWhen" : "2022-06-10 16:00",
+      "end" : 1654869600000,
+      "wie" : "BROKERS"
+    }, {
+      "start" : 1654869600000,
+      "startWhen" : "2022-06-10 16:00",
+      "endWhen" : "2022-06-10 18:00",
+      "end" : 1654876800000,
+      "wie" : "ALEX FROM TOKYO"
+    }, {
+      "start" : 1654876800000,
+      "startWhen" : "2022-06-10 18:00",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "CHRISTINE RENÃ‰E"
+    }, {
+      "start" : 1654884000000,
+      "startWhen" : "2022-06-10 20:00",
+      "endWhen" : "2022-06-10 22:00",
+      "end" : 1654891200000,
+      "wie" : "OFRA (OPERATOR)"
+    }, {
+      "start" : 1654891200000,
+      "startWhen" : "2022-06-10 22:00",
+      "endWhen" : "2022-06-10 00:00",
+      "end" : 1654812000000,
+      "wie" : "DOLLKRAUT PRESENTS\rDJ EURO PARKING"
+    } ]
+  }, {
+    "name" : "LAKE",
+    "events" : [ {
+      "start" : 1654812000000,
+      "startWhen" : "2022-06-10 00:00",
+      "endWhen" : "2022-06-10 02:00",
+      "end" : 1654819200000,
+      "wie" : "DJ LEONI"
+    }, {
+      "start" : 1654819200000,
+      "startWhen" : "2022-06-10 02:00",
+      "endWhen" : "2022-06-10 04:00",
+      "end" : 1654826400000,
+      "wie" : "CINNAMAN"
+    }, {
+      "start" : 1654862400000,
+      "startWhen" : "2022-06-10 14:00",
+      "endWhen" : "2022-06-10 16:00",
+      "end" : 1654869600000,
+      "wie" : "ELIAS MAZIAN"
+    }, {
+      "start" : 1654869600000,
+      "startWhen" : "2022-06-10 16:00",
+      "endWhen" : "2022-06-10 18:00",
+      "end" : 1654876800000,
+      "wie" : "JERRAU"
+    }, {
+      "start" : 1654876800000,
+      "startWhen" : "2022-06-10 18:00",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "NEDDA SOU"
+    }, {
+      "start" : 1654884000000,
+      "startWhen" : "2022-06-10 20:00",
+      "endWhen" : "2022-06-10 22:00",
+      "end" : 1654891200000,
+      "wie" : "MONTY DJ"
+    }, {
+      "start" : 1654891200000,
+      "startWhen" : "2022-06-10 22:00",
+      "endWhen" : "2022-06-10 00:00",
+      "end" : 1654812000000,
+      "wie" : "VAN ANH"
+    } ]
+  }, {
+    "name" : "LODGE",
+    "events" : [ {
+      "start" : 1654815600000,
+      "startWhen" : "2022-06-10 01:00",
+      "endWhen" : "2022-06-10 02:00",
+      "end" : 1654819200000,
+      "wie" : "BLCK\rMAMBA"
+    }, {
+      "start" : 1654821000000,
+      "startWhen" : "2022-06-10 02:30",
+      "endWhen" : "2022-06-10 03:30",
+      "end" : 1654824600000,
+      "wie" : "VERA\rSIEMONS"
+    }, {
+      "start" : 1654862400000,
+      "startWhen" : "2022-06-10 14:00",
+      "endWhen" : "2022-06-10 01:30",
+      "end" : 1654817400000,
+      "wie" : "FOOD, DRINKS, DE PONT, ART & WORKSHOPS, MUZIEKGIETERIJ HEAVEN SESSIONS, WELLNESS SWELLNESS, WILDER LAND TEA"
+    }, {
+      "start" : 1654867800000,
+      "startWhen" : "2022-06-10 15:30",
+      "endWhen" : "2022-06-10 16:30",
+      "end" : 1654871400000,
+      "wie" : "JASPER V\r(ALTIN GÃœN\rDJ SET)"
+    }, {
+      "start" : 1654873200000,
+      "startWhen" : "2022-06-10 17:00",
+      "endWhen" : "2022-06-10 18:00",
+      "end" : 1654876800000,
+      "wie" : "MAXIMOTO"
+    }, {
+      "start" : 1654875900000,
+      "startWhen" : "2022-06-10 17:45",
+      "endWhen" : "2022-06-10 18:30",
+      "end" : 1654878600000,
+      "wie" : "YASMIN\rWILLIAMS"
+    }, {
+      "start" : 1654880400000,
+      "startWhen" : "2022-06-10 19:00",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "ELVILIA"
+    }, {
+      "start" : 1654881300000,
+      "startWhen" : "2022-06-10 19:15",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "GUSTAF"
+    }, {
+      "start" : 1654886700000,
+      "startWhen" : "2022-06-10 20:45",
+      "endWhen" : "2022-06-10 21:30",
+      "end" : 1654889400000,
+      "wie" : "TALK\rSHOW"
+    }, {
+      "start" : 1654887600000,
+      "startWhen" : "2022-06-10 21:00",
+      "endWhen" : "2022-06-10 22:00",
+      "end" : 1654891200000,
+      "wie" : "THEME TIME\rGOLDEN HOUR: KC\rTHE FUNKAHOLIC\r(NY DISCO SET)"
+    }, {
+      "start" : 1654892100000,
+      "startWhen" : "2022-06-10 22:15",
+      "endWhen" : "2022-06-10 23:00",
+      "end" : 1654894800000,
+      "wie" : "TRAM-\rHAUS"
+    }, {
+      "start" : 1654893000000,
+      "startWhen" : "2022-06-10 22:30",
+      "endWhen" : "2022-06-10 23:30",
+      "end" : 1654896600000,
+      "wie" : "TJADE"
+    } ]
+  }, {
+    "name" : "LODGE",
+    "events" : [ {
+      "start" : 1654815600000,
+      "startWhen" : "2022-06-10 01:00",
+      "endWhen" : "2022-06-10 02:00",
+      "end" : 1654819200000,
+      "wie" : "BLCK\rMAMBA"
+    }, {
+      "start" : 1654821000000,
+      "startWhen" : "2022-06-10 02:30",
+      "endWhen" : "2022-06-10 03:30",
+      "end" : 1654824600000,
+      "wie" : "VERA\rSIEMONS"
+    }, {
+      "start" : 1654862400000,
+      "startWhen" : "2022-06-10 14:00",
+      "endWhen" : "2022-06-10 01:30",
+      "end" : 1654817400000,
+      "wie" : "FOOD, DRINKS, DE PONT, ART & WORKSHOPS, MUZIEKGIETERIJ HEAVEN SESSIONS, WELLNESS SWELLNESS, WILDER LAND TEA"
+    }, {
+      "start" : 1654867800000,
+      "startWhen" : "2022-06-10 15:30",
+      "endWhen" : "2022-06-10 16:30",
+      "end" : 1654871400000,
+      "wie" : "JASPER V\r(ALTIN GÃœN\rDJ SET)"
+    }, {
+      "start" : 1654873200000,
+      "startWhen" : "2022-06-10 17:00",
+      "endWhen" : "2022-06-10 18:00",
+      "end" : 1654876800000,
+      "wie" : "MAXIMOTO"
+    }, {
+      "start" : 1654875900000,
+      "startWhen" : "2022-06-10 17:45",
+      "endWhen" : "2022-06-10 18:30",
+      "end" : 1654878600000,
+      "wie" : "YASMIN\rWILLIAMS"
+    }, {
+      "start" : 1654880400000,
+      "startWhen" : "2022-06-10 19:00",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "ELVILIA"
+    }, {
+      "start" : 1654881300000,
+      "startWhen" : "2022-06-10 19:15",
+      "endWhen" : "2022-06-10 20:00",
+      "end" : 1654884000000,
+      "wie" : "GUSTAF"
+    }, {
+      "start" : 1654886700000,
+      "startWhen" : "2022-06-10 20:45",
+      "endWhen" : "2022-06-10 21:30",
+      "end" : 1654889400000,
+      "wie" : "TALK\rSHOW"
+    }, {
+      "start" : 1654887600000,
+      "startWhen" : "2022-06-10 21:00",
+      "endWhen" : "2022-06-10 22:00",
+      "end" : 1654891200000,
+      "wie" : "THEME TIME\rGOLDEN HOUR: KC\rTHE FUNKAHOLIC\r(NY DISCO SET)"
+    }, {
+      "start" : 1654892100000,
+      "startWhen" : "2022-06-10 22:15",
+      "endWhen" : "2022-06-10 23:00",
+      "end" : 1654894800000,
+      "wie" : "TRAM-\rHAUS"
+    }, {
+      "start" : 1654893000000,
+      "startWhen" : "2022-06-10 22:30",
+      "endWhen" : "2022-06-10 23:30",
+      "end" : 1654896600000,
+      "wie" : "TJADE"
+    } ]
+  } ]
+}, {
+  "dag" : 1654898400000,
+  "when" : "2022-06-11",
+  "podiums" : [ {
+    "name" : "ONE",
+    "events" : [ {
+      "start" : 1654956000000,
+      "startWhen" : "2022-06-11 16:00",
+      "endWhen" : "2022-06-11 17:00",
+      "end" : 1654959600000,
+      "wie" : "BOY\rPABLO"
+    }, {
+      "start" : 1654963200000,
+      "startWhen" : "2022-06-11 18:00",
+      "endWhen" : "2022-06-11 19:00",
+      "end" : 1654966800000,
+      "wie" : "DEUS"
+    }, {
+      "start" : 1654970400000,
+      "startWhen" : "2022-06-11 20:00",
+      "endWhen" : "2022-06-11 21:00",
+      "end" : 1654974000000,
+      "wie" : "FONTAINES\rD.C."
+    }, {
+      "start" : 1654978500000,
+      "startWhen" : "2022-06-11 22:15",
+      "endWhen" : "2022-06-11 23:45",
+      "end" : 1654983900000,
+      "wie" : "THE STROKES"
+    } ]
+  }, {
+    "name" : "TWO",
+    "events" : [ {
+      "start" : 1654945200000,
+      "startWhen" : "2022-06-11 13:00",
+      "endWhen" : "2022-06-11 14:00",
+      "end" : 1654948800000,
+      "wie" : "SEF & HET EL\rSALVADOR\rENSEMBLE"
+    }, {
+      "start" : 1654952400000,
+      "startWhen" : "2022-06-11 15:00",
+      "endWhen" : "2022-06-11 16:00",
+      "end" : 1654956000000,
+      "wie" : "PIP BLOM"
+    }, {
+      "start" : 1654959600000,
+      "startWhen" : "2022-06-11 17:00",
+      "endWhen" : "2022-06-11 18:00",
+      "end" : 1654963200000,
+      "wie" : "FROUKJE"
+    }, {
+      "start" : 1654966800000,
+      "startWhen" : "2022-06-11 19:00",
+      "endWhen" : "2022-06-11 20:00",
+      "end" : 1654970400000,
+      "wie" : "BIG THIEF"
+    }, {
+      "start" : 1654974000000,
+      "startWhen" : "2022-06-11 21:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "METRO NOMY"
+    }, {
+      "start" : 1654983900000,
+      "startWhen" : "2022-06-11 23:45",
+      "endWhen" : "2022-06-11 01:00",
+      "end" : 1654902000000,
+      "wie" : "BEACH\rHOUSE"
+    } ]
+  }, {
+    "name" : "SECRET",
+    "events" : [ {
+      "start" : 1654905600000,
+      "startWhen" : "2022-06-11 02:00",
+      "endWhen" : "2022-06-11 04:00",
+      "end" : 1654912800000,
+      "wie" : "CARISTA\r(DJ SET)"
+    }, {
+      "start" : 1654944300000,
+      "startWhen" : "2022-06-11 12:45",
+      "endWhen" : "2022-06-11 13:30",
+      "end" : 1654947000000,
+      "wie" : "Lâ€™RAIN"
+    }, {
+      "start" : 1654948800000,
+      "startWhen" : "2022-06-11 14:00",
+      "endWhen" : "2022-06-11 14:45",
+      "end" : 1654951500000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654954200000,
+      "startWhen" : "2022-06-11 15:30",
+      "endWhen" : "2022-06-11 16:15",
+      "end" : 1654956900000,
+      "wie" : "KEIYAA"
+    }, {
+      "start" : 1654959600000,
+      "startWhen" : "2022-06-11 17:00",
+      "endWhen" : "2022-06-11 17:45",
+      "end" : 1654962300000,
+      "wie" : "JUST\rMUSTARD"
+    }, {
+      "start" : 1654965000000,
+      "startWhen" : "2022-06-11 18:30",
+      "endWhen" : "2022-06-11 19:15",
+      "end" : 1654967700000,
+      "wie" : "THE\rVICES"
+    }, {
+      "start" : 1654970400000,
+      "startWhen" : "2022-06-11 20:00",
+      "endWhen" : "2022-06-11 20:45",
+      "end" : 1654973100000,
+      "wie" : "BEACH\rBUNNY"
+    }, {
+      "start" : 1654975800000,
+      "startWhen" : "2022-06-11 21:30",
+      "endWhen" : "2022-06-11 22:15",
+      "end" : 1654978500000,
+      "wie" : "PORRIDGE\rRADIO"
+    }, {
+      "start" : 1654981200000,
+      "startWhen" : "2022-06-11 23:00",
+      "endWhen" : "2022-06-11 00:00",
+      "end" : 1654898400000,
+      "wie" : "KIKAGAKU\rMOYO"
+    } ]
+  }, {
+    "name" : "CASBAH",
+    "events" : [ {
+      "start" : 1654898400000,
+      "startWhen" : "2022-06-11 00:00",
+      "endWhen" : "2022-06-11 02:00",
+      "end" : 1654905600000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654905600000,
+      "startWhen" : "2022-06-11 02:00",
+      "endWhen" : "2022-06-11 04:00",
+      "end" : 1654912800000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654941600000,
+      "startWhen" : "2022-06-11 12:00",
+      "endWhen" : "2022-06-11 14:00",
+      "end" : 1654948800000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654948800000,
+      "startWhen" : "2022-06-11 14:00",
+      "endWhen" : "2022-06-11 14:45",
+      "end" : 1654951500000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654951500000,
+      "startWhen" : "2022-06-11 14:45",
+      "endWhen" : "2022-06-11 15:30",
+      "end" : 1654954200000,
+      "wie" : "JENSEN\rMCRAE"
+    }, {
+      "start" : 1654954200000,
+      "startWhen" : "2022-06-11 15:30",
+      "endWhen" : "2022-06-11 16:15",
+      "end" : 1654956900000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654956900000,
+      "startWhen" : "2022-06-11 16:15",
+      "endWhen" : "2022-06-11 17:00",
+      "end" : 1654959600000,
+      "wie" : "CERO\rISMAEL"
+    }, {
+      "start" : 1654959600000,
+      "startWhen" : "2022-06-11 17:00",
+      "endWhen" : "2022-06-11 17:45",
+      "end" : 1654962300000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654962300000,
+      "startWhen" : "2022-06-11 17:45",
+      "endWhen" : "2022-06-11 18:30",
+      "end" : 1654965000000,
+      "wie" : "FUTURE\rHUSBAND"
+    }, {
+      "start" : 1654965000000,
+      "startWhen" : "2022-06-11 18:30",
+      "endWhen" : "2022-06-11 19:15",
+      "end" : 1654967700000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654967700000,
+      "startWhen" : "2022-06-11 19:15",
+      "endWhen" : "2022-06-11 20:00",
+      "end" : 1654970400000,
+      "wie" : "UN-\rSCHOOL-\rING"
+    }, {
+      "start" : 1654970400000,
+      "startWhen" : "2022-06-11 20:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "TBA"
+    }, {
+      "start" : 1654977600000,
+      "startWhen" : "2022-06-11 22:00",
+      "endWhen" : "2022-06-11 00:00",
+      "end" : 1654898400000,
+      "wie" : "TBA"
+    } ]
+  }, {
+    "name" : "FLOOR",
+    "events" : [ {
+      "start" : 1654902000000,
+      "startWhen" : "2022-06-11 01:00",
+      "endWhen" : "2022-06-11 02:00",
+      "end" : 1654905600000,
+      "wie" : "FAISAL"
+    }, {
+      "start" : 1654905600000,
+      "startWhen" : "2022-06-11 02:00",
+      "endWhen" : "2022-06-11 04:00",
+      "end" : 1654912800000,
+      "wie" : "JOOST VAN BELLEN B2B\rST. PAUL UK RAVE SET"
+    }, {
+      "start" : 1654948800000,
+      "startWhen" : "2022-06-11 14:00",
+      "endWhen" : "2022-06-11 15:00",
+      "end" : 1654952400000,
+      "wie" : "EASY\rALOHAâ€™S"
+    }, {
+      "start" : 1654961400000,
+      "startWhen" : "2022-06-11 17:30",
+      "endWhen" : "2022-06-11 18:30",
+      "end" : 1654965000000,
+      "wie" : "ANNA PRIOR\r(METRONOMY\rDJ SET)"
+    }, {
+      "start" : 1654968600000,
+      "startWhen" : "2022-06-11 19:30",
+      "endWhen" : "2022-06-11 20:30",
+      "end" : 1654972200000,
+      "wie" : "SOPHIE\rSTRAAT (LIVE)"
+    }, {
+      "start" : 1654974000000,
+      "startWhen" : "2022-06-11 21:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "THEME TIME\rGOLDEN HOUR:\rUNRULY PHOENIX\r(AMAPIANO SET)"
+    }, {
+      "start" : 1654979400000,
+      "startWhen" : "2022-06-11 22:30",
+      "endWhen" : "2022-06-11 23:30",
+      "end" : 1654983000000,
+      "wie" : "ALIA"
+    } ]
+  }, {
+    "name" : "CONEY",
+    "events" : [ {
+      "start" : 1654898400000,
+      "startWhen" : "2022-06-11 00:00",
+      "endWhen" : "2022-06-11 02:00",
+      "end" : 1654905600000,
+      "wie" : "BONA LÃ‰A"
+    }, {
+      "start" : 1654905600000,
+      "startWhen" : "2022-06-11 02:00",
+      "endWhen" : "2022-06-11 04:00",
+      "end" : 1654912800000,
+      "wie" : "MALOCA TAKEOVER:\rLE MOTEL B2B DJ JM"
+    }, {
+      "start" : 1654941600000,
+      "startWhen" : "2022-06-11 12:00",
+      "endWhen" : "2022-06-11 14:00",
+      "end" : 1654948800000,
+      "wie" : "MICKEY B2B JIM BECKER\r(KIOSK RADIO)"
+    }, {
+      "start" : 1654948800000,
+      "startWhen" : "2022-06-11 14:00",
+      "endWhen" : "2022-06-11 16:00",
+      "end" : 1654956000000,
+      "wie" : "MANDY PIXEL"
+    }, {
+      "start" : 1654956000000,
+      "startWhen" : "2022-06-11 16:00",
+      "endWhen" : "2022-06-11 18:00",
+      "end" : 1654963200000,
+      "wie" : "SEBCAT (REBEL UP)"
+    }, {
+      "start" : 1654970400000,
+      "startWhen" : "2022-06-11 20:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "BIBI SECK"
+    }, {
+      "start" : 1654977600000,
+      "startWhen" : "2022-06-11 22:00",
+      "endWhen" : "2022-06-11 00:00",
+      "end" : 1654898400000,
+      "wie" : "DJ SOFA"
+    } ]
+  }, {
+    "name" : "LAKE",
+    "events" : [ {
+      "start" : 1654898400000,
+      "startWhen" : "2022-06-11 00:00",
+      "endWhen" : "2022-06-11 02:00",
+      "end" : 1654905600000,
+      "wie" : "SANDRIEN"
+    }, {
+      "start" : 1654905600000,
+      "startWhen" : "2022-06-11 02:00",
+      "endWhen" : "2022-06-11 04:00",
+      "end" : 1654912800000,
+      "wie" : "FRENCH II"
+    }, {
+      "start" : 1654941600000,
+      "startWhen" : "2022-06-11 12:00",
+      "endWhen" : "2022-06-11 14:00",
+      "end" : 1654948800000,
+      "wie" : "RADIO RADIO DJâ€™S"
+    }, {
+      "start" : 1654948800000,
+      "startWhen" : "2022-06-11 14:00",
+      "endWhen" : "2022-06-11 16:00",
+      "end" : 1654956000000,
+      "wie" : "YÃ’P"
+    }, {
+      "start" : 1654956000000,
+      "startWhen" : "2022-06-11 16:00",
+      "endWhen" : "2022-06-11 18:00",
+      "end" : 1654963200000,
+      "wie" : "BERTON"
+    }, {
+      "start" : 1654963200000,
+      "startWhen" : "2022-06-11 18:00",
+      "endWhen" : "2022-06-11 20:00",
+      "end" : 1654970400000,
+      "wie" : "BEA1991"
+    }, {
+      "start" : 1654970400000,
+      "startWhen" : "2022-06-11 20:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "PIETER JANSEN"
+    }, {
+      "start" : 1654977600000,
+      "startWhen" : "2022-06-11 22:00",
+      "endWhen" : "2022-06-11 00:00",
+      "end" : 1654898400000,
+      "wie" : "TSEPO"
+    } ]
+  }, {
+    "name" : "LODGE",
+    "events" : [ {
+      "start" : 1654938000000,
+      "startWhen" : "2022-06-11 11:00",
+      "endWhen" : "2022-06-11 01:30",
+      "end" : 1654903800000,
+      "wie" : "FOOD, DRINKS, DE PONT, ART & WORKSHOPS, MUZIEKGIETERIJ HEAVEN SESSIONS, WELLNESS SWELLNESS, WILDER LAND TEA"
+    }, {
+      "start" : 1654943400000,
+      "startWhen" : "2022-06-11 12:30",
+      "endWhen" : "2022-06-11 14:30",
+      "end" : 1654950600000,
+      "wie" : "LEKKER FRED LIVE"
+    }, {
+      "start" : 1654948800000,
+      "startWhen" : "2022-06-11 14:00",
+      "endWhen" : "2022-06-11 15:00",
+      "end" : 1654952400000,
+      "wie" : "EASY\rALOHAâ€™S"
+    }, {
+      "start" : 1654952400000,
+      "startWhen" : "2022-06-11 15:00",
+      "endWhen" : "2022-06-11 17:00",
+      "end" : 1654959600000,
+      "wie" : "HARTERING"
+    }, {
+      "start" : 1654961400000,
+      "startWhen" : "2022-06-11 17:30",
+      "endWhen" : "2022-06-11 19:30",
+      "end" : 1654968600000,
+      "wie" : "CORNERSTORE"
+    }, {
+      "start" : 1654968600000,
+      "startWhen" : "2022-06-11 19:30",
+      "endWhen" : "2022-06-11 20:30",
+      "end" : 1654972200000,
+      "wie" : "SOPHIE\rSTRAAT (LIVE)"
+    }, {
+      "start" : 1654970400000,
+      "startWhen" : "2022-06-11 20:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "MILAN GATARIC LUX\r& TROPPO GIOVANE"
+    }, {
+      "start" : 1654974000000,
+      "startWhen" : "2022-06-11 21:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "THEME TIME\rGOLDEN HOUR:\rUNRULY PHOENIX\r(AMAPIANO SET)"
+    }, {
+      "start" : 1654979400000,
+      "startWhen" : "2022-06-11 22:30",
+      "endWhen" : "2022-06-11 23:30",
+      "end" : 1654983000000,
+      "wie" : "ALIA"
+    } ]
+  }, {
+    "name" : "LODGE",
+    "events" : [ {
+      "start" : 1654938000000,
+      "startWhen" : "2022-06-11 11:00",
+      "endWhen" : "2022-06-11 01:30",
+      "end" : 1654903800000,
+      "wie" : "FOOD, DRINKS, DE PONT, ART & WORKSHOPS, MUZIEKGIETERIJ HEAVEN SESSIONS, WELLNESS SWELLNESS, WILDER LAND TEA"
+    }, {
+      "start" : 1654943400000,
+      "startWhen" : "2022-06-11 12:30",
+      "endWhen" : "2022-06-11 14:30",
+      "end" : 1654950600000,
+      "wie" : "LEKKER FRED LIVE"
+    }, {
+      "start" : 1654948800000,
+      "startWhen" : "2022-06-11 14:00",
+      "endWhen" : "2022-06-11 15:00",
+      "end" : 1654952400000,
+      "wie" : "EASY\rALOHAâ€™S"
+    }, {
+      "start" : 1654952400000,
+      "startWhen" : "2022-06-11 15:00",
+      "endWhen" : "2022-06-11 17:00",
+      "end" : 1654959600000,
+      "wie" : "HARTERING"
+    }, {
+      "start" : 1654961400000,
+      "startWhen" : "2022-06-11 17:30",
+      "endWhen" : "2022-06-11 19:30",
+      "end" : 1654968600000,
+      "wie" : "CORNERSTORE"
+    }, {
+      "start" : 1654968600000,
+      "startWhen" : "2022-06-11 19:30",
+      "endWhen" : "2022-06-11 20:30",
+      "end" : 1654972200000,
+      "wie" : "SOPHIE\rSTRAAT (LIVE)"
+    }, {
+      "start" : 1654970400000,
+      "startWhen" : "2022-06-11 20:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "MILAN GATARIC LUX\r& TROPPO GIOVANE"
+    }, {
+      "start" : 1654974000000,
+      "startWhen" : "2022-06-11 21:00",
+      "endWhen" : "2022-06-11 22:00",
+      "end" : 1654977600000,
+      "wie" : "THEME TIME\rGOLDEN HOUR:\rUNRULY PHOENIX\r(AMAPIANO SET)"
+    }, {
+      "start" : 1654979400000,
+      "startWhen" : "2022-06-11 22:30",
+      "endWhen" : "2022-06-11 23:30",
+      "end" : 1654983000000,
+      "wie" : "ALIA"
+    } ]
+  } ]
+}, {
+  "dag" : 1654984800000,
+  "when" : "2022-06-12",
+  "podiums" : [ {
+    "name" : "ONE",
+    "events" : [ {
+      "start" : 1655038800000,
+      "startWhen" : "2022-06-12 15:00",
+      "endWhen" : "2022-06-12 16:00",
+      "end" : 1655042400000,
+      "wie" : "NovaStar"
+    }, {
+      "start" : 1655046000000,
+      "startWhen" : "2022-06-12 17:00",
+      "endWhen" : "2022-06-12 18:00",
+      "end" : 1655049600000,
+      "wie" : "Wolf Alice"
+    }, {
+      "start" : 1655053200000,
+      "startWhen" : "2022-06-12 19:00",
+      "endWhen" : "2022-06-12 20:15",
+      "end" : 1655057700000,
+      "wie" : "King Gizzard & the lizard wizzard"
+    }, {
+      "start" : 1655060400000,
+      "startWhen" : "2022-06-12 21:00",
+      "endWhen" : "2022-06-12 23:00",
+      "end" : 1655067600000,
+      "wie" : "Nick Cave &the bad seeds"
+    } ]
+  }, {
+    "name" : "TWO",
+    "events" : [ {
+      "start" : 1655028000000,
+      "startWhen" : "2022-06-12 12:00",
+      "endWhen" : "2022-06-12 13:30",
+      "end" : 1655033400000,
+      "wie" : "Amenra"
+    }, {
+      "start" : 1655035200000,
+      "startWhen" : "2022-06-12 14:00",
+      "endWhen" : "2022-06-12 15:00",
+      "end" : 1655038800000,
+      "wie" : "Black Midi"
+    }, {
+      "start" : 1655042400000,
+      "startWhen" : "2022-06-12 16:00",
+      "endWhen" : "2022-06-12 17:00",
+      "end" : 1655046000000,
+      "wie" : "Sampa The Great"
+    }, {
+      "start" : 1655049600000,
+      "startWhen" : "2022-06-12 18:00",
+      "endWhen" : "2022-06-12 19:00",
+      "end" : 1655053200000,
+      "wie" : "Sky Fereira"
+    }, {
+      "start" : 1655057700000,
+      "startWhen" : "2022-06-12 20:15",
+      "endWhen" : "2022-06-12 21:15",
+      "end" : 1655061300000,
+      "wie" : "Mura Musa"
+    }, {
+      "start" : 1655065800000,
+      "startWhen" : "2022-06-12 22:30",
+      "endWhen" : "2022-06-12 00:45",
+      "end" : 1654987500000,
+      "wie" : "2ManyDjs"
+    } ]
+  }, {
+    "name" : "SECRET",
+    "events" : [ {
+      "start" : 1655031600000,
+      "startWhen" : "2022-06-12 13:00",
+      "endWhen" : "2022-06-12 13:45",
+      "end" : 1655034300000,
+      "wie" : "Meskerem Mees"
+    }, {
+      "start" : 1655037000000,
+      "startWhen" : "2022-06-12 14:30",
+      "endWhen" : "2022-06-12 15:15",
+      "end" : 1655039700000,
+      "wie" : "Spelling"
+    }, {
+      "start" : 1655042400000,
+      "startWhen" : "2022-06-12 16:00",
+      "endWhen" : "2022-06-12 16:45",
+      "end" : 1655045100000,
+      "wie" : "Casandra Jenkins"
+    }, {
+      "start" : 1655047800000,
+      "startWhen" : "2022-06-12 17:30",
+      "endWhen" : "2022-06-12 18:15",
+      "end" : 1655050500000,
+      "wie" : "Nilufer YanYa"
+    }, {
+      "start" : 1655053200000,
+      "startWhen" : "2022-06-12 19:00",
+      "endWhen" : "2022-06-12 19:45",
+      "end" : 1655055900000,
+      "wie" : "Holly Humberstone"
+    }, {
+      "start" : 1655058600000,
+      "startWhen" : "2022-06-12 20:30",
+      "endWhen" : "2022-06-12 21:30",
+      "end" : 1655062200000,
+      "wie" : "Jehny Beth"
+    }, {
+      "start" : 1655064900000,
+      "startWhen" : "2022-06-12 22:15",
+      "endWhen" : "2022-06-12 23:15",
+      "end" : 1655068500000,
+      "wie" : "Automatic"
+    } ]
+  }, {
+    "name" : "CASBAH",
+    "events" : [ {
+      "start" : 1655039700000,
+      "startWhen" : "2022-06-12 15:15",
+      "endWhen" : "2022-06-12 16:00",
+      "end" : 1655042400000,
+      "wie" : "Luz"
+    }, {
+      "start" : 1655045100000,
+      "startWhen" : "2022-06-12 16:45",
+      "endWhen" : "2022-06-12 17:30",
+      "end" : 1655047800000,
+      "wie" : "Nagasaki Swim"
+    } ]
+  } ]
+} ]
