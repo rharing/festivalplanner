@@ -8,7 +8,7 @@ class EventsService {
     private EventRepository eventRepository
 
     public List<EventDTO> listEvents(DateTime when){
-        eventRepository.listEvents(when)
+        eventRepository.loadDag(when)
 
     }
 }

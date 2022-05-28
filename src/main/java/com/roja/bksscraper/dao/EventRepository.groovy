@@ -22,9 +22,12 @@ class EventRepository {
         dagen = Arrays.asList(objectMapper.readValue(classPathResource.inputStream, FestivalDagDTO[].class));
     }
 
-    public FestivalDagDTO  listEvents(DateTime when) {
+    public FestivalDagDTO loadDag(DateTime when) {
         def dag = FestivalDagDTO.formatter.print(when)
 
         return dagen.find {it.when == dag}
+    }
+    public List<EventDTO> loadeVENTS(DateTime when) {
+        loadDag(when)
     }
 }
