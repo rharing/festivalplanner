@@ -1,128 +1,107 @@
 <template>
   <v-app id="inspire">
-    <v-system-bar app>
-      <v-spacer></v-spacer>
-
-      <v-icon>mdi-square</v-icon>
-
-      <v-icon>mdi-circle</v-icon>
-
-      <v-icon>mdi-triangle</v-icon>
-    </v-system-bar>
-
     <v-app-bar
-      app
-      clipped-right
-      flat
-      height="72"
+        app
+        color="white"
+        flat
     >
-      <v-spacer></v-spacer>
+      <v-container class="py-0 fill-height">
+        <v-avatar
+            class="mr-10"
+            color="grey darken-1"
+            size="32"
+        ></v-avatar>
 
-      <v-responsive max-width="156">
-        <v-text-field
-          dense
-          flat
-          hide-details
-          rounded
-          solo-inverted
-        ></v-text-field>
-      </v-responsive>
+        <v-btn
+            v-for="link in links"
+            :key="link"
+            text
+        >
+          {{ link }}
+        </v-btn>
+
+        <v-spacer></v-spacer>
+
+        <v-responsive max-width="260">
+          <v-text-field
+              dense
+              flat
+              hide-details
+              rounded
+              solo-inverted
+          ></v-text-field>
+        </v-responsive>
+      </v-container>
     </v-app-bar>
 
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      width="300"
-    >
-      <v-navigation-drawer
-        v-model="drawer"
-        absolute
-        color="grey lighten-3"
-        mini-variant
-      >
-        <v-avatar
-          class="d-block text-center mx-auto mt-4"
-          color="grey darken-1"
-          size="36"
-        ></v-avatar>
+    <v-main class="grey lighten-3">
+      <v-container>
+        <v-row>
+          <v-col cols="2">
+            <v-sheet rounded="lg">
+              <v-list color="transparent">
+                <v-list-item
+                    v-for="podium in podiums"
+                    :key="podium"
 
-        <v-divider class="mx-3 my-5"></v-divider>
+                >
+                  <v-list-item-content>
+                    <v-list-item-title>
+                      {{podium}}
+                    </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
 
-        <v-avatar
-          v-for="n in 6"
-          :key="n"
-          class="d-block text-center mx-auto mb-9"
-          color="grey lighten-1"
-          size="28"
-        ></v-avatar>
-      </v-navigation-drawer>
+                <v-divider class="my-2"></v-divider>
+<!--
+                <v-list-item
+                    link
+                    color="grey lighten-4"
+                >
+                  <v-list-item-content>
+                    <v-list-item-title>
+                      Refresh
+                    </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+                -->
+              </v-list>
+            </v-sheet>
+          </v-col>
 
-      <v-sheet
-        color="grey lighten-5"
-        height="128"
-        width="100%"
-      ></v-sheet>
-
-      <v-list
-        class="pl-14"
-        shaped
-      >
-        <v-list-item
-          v-for="n in 5"
-          :key="n"
-          link
-        >
-          <v-list-item-content>
-            <v-list-item-title>Item {{ n }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-navigation-drawer
-      app
-      clipped
-      right
-    >
-      <v-list>
-        <v-list-item
-          v-for="n in 5"
-          :key="n"
-          link
-        >
-          <v-list-item-content>
-            <v-list-item-title>Item {{ n }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-main>
-     <HomeView/>
+          <v-col>
+            <v-sheet
+                min-height="70vh"
+                rounded="lg"
+            >
+              <!--  -->
+            </v-sheet>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-main>
-
-    <v-footer
-      app
-      color="transparent"
-      height="72"
-      inset
-    >
-      <v-text-field
-        background-color="grey lighten-1"
-        dense
-        flat
-        hide-details
-        rounded
-        solo
-      ></v-text-field>
-    </v-footer>
   </v-app>
 </template>
 
 <script>
-import HomeView from './views/HomeView.vue';
-  export default {
-    data: () => ({ drawer: null }),
-    components: { HomeView }
+export default {
+  data: () => ({
+    links: [
+      'Dashboard',
+      'Vrijdag',
+      'Zaterdag',
+      'Zondag',
+        'Favs'
+    ],
+    podiums:[
+        'ONE',
+        'TWO',
+        'SECRET',
+        'CASBAH',
+        'FLOOR'
+
+    ]
+  }),
 }
 </script>
+
