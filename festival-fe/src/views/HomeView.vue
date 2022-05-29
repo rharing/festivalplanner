@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <events-overview />
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import EventsOverview from '../components/EventsOverview'
 
   export default {
     name: 'Home',
 
     components: {
-      HelloWorld,
+      EventsOverview,
     },
   }
 </script>

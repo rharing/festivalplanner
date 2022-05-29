@@ -1,4 +1,8 @@
 <template>
+  <div>
+    events...
+
+  </div>
 </template>
 <script>
 
