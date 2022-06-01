@@ -1,0 +1,3 @@
+interface festival{
+    dagen:[] dag
+}
