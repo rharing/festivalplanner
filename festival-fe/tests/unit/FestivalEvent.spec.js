@@ -1,6 +1,6 @@
-import FestivalEvent from '@/domain/festivalEvent'
+import {FestivalEvent} from '@/domain/festivalEvent'
 
-describe('setting upthe domain', () => {
+describe('setting up the domain', () => {
     it('creating event', () => {
         let input =
             {
@@ -11,7 +11,7 @@ describe('setting upthe domain', () => {
                 "wie": "MAVIS\rSTAPLES"
             };
 
-        dinges:FestivalEvent = FestivalEvent{input);
+        dinges:FestivalEvent = new  FestivalEvent(input);
     expect(dinges.wie).toBe("MAVIS\rSTAPLES");
 
     })
