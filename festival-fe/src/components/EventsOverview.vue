@@ -1,6 +1,5 @@
 <template>
   <div>
-    events...
     <v-card v-for="(event, index) in events" :key=index>
       <v-card-title>{{ event.wie }}</v-card-title>
       <v-card-text>
@@ -30,7 +29,6 @@ export default {
       var fest = new festival(response.data)
       this.events = fest.allEvents()
 
-      console.log("response.data", fest)
     });
   }
 }

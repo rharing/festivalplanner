@@ -11,7 +11,6 @@ export function festival(data) {
         for (const element of this.dagen) {
             const mydag = element;
             events = events.concat(mydag.allEvents());
-            console.log("events", events)
         }
         return events
     }

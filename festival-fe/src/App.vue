@@ -23,13 +23,7 @@
         <v-spacer></v-spacer>
 
         <v-responsive max-width="260">
-          <v-text-field
-              dense
-              flat
-              hide-details
-              rounded
-              solo-inverted
-          ></v-text-field>
+
         </v-responsive>
       </v-container>
     </v-app-bar>
@@ -47,7 +41,7 @@
                 >
                   <v-list-item-content>
                     <v-list-item-title>
-                      {{podium}}
+                     <v-checkbox @click="selectPodium(podium)" :label="podium"/>
                     </v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
@@ -75,11 +69,11 @@
 export default {
   data: () => ({
     links: [
-      'Dashboard',
+      'Alles',
       'Vrijdag',
       'Zaterdag',
       'Zondag',
-        'Favs'
+        'Fav'
     ],
     podiums:[
         'ONE',
@@ -90,6 +84,11 @@ export default {
 
     ]
   }),
+  methods:{
+    selectPodium(podium){
+      console.log("filtering op ", podium);
+    }
+  }
 }
 </script>
 
