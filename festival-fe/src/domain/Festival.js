@@ -1,16 +1,18 @@
 import {dag} from './dag';
+
 export function festival(data) {
+    this.nou = "moe"
     this.dagen = [];
-    for (const element of data) {
-        const mydag = element;
+    for (const mydag of data) {
         this.dagen.push(new dag(mydag))
     }
 
-    function allEvents() {
-        this.events = [];
+    this.allEvents = function() {
+        let events = [];
         for (const element of this.dagen) {
             const mydag = element;
-            this.events.concat(mydag.allEvents());
+            events.concat(mydag.allEvents());
         }
+        return events
     }
 }

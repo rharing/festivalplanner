@@ -27,7 +27,7 @@ export default {
     const endpoint = "http://localhost:3000/dagen"
     Vue.axios.get(endpoint).then(response => {
 
-      var fest = festival(response.data)
+      var fest = new festival(response.data)
       this.events = fest.allEvents()
 
       console.log("response.data", fest)

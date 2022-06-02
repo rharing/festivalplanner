@@ -9,7 +9,7 @@ export function dag(data) {
         this.podiums.push(podium1)
     }
 
-    function allEvents(){
+    this.allEvents = function() {
         let events = [];
         for(const element of this.podiums) {
             events.push(element.allEvents);
