@@ -1,49 +1,21 @@
 <template>
   <div>
     events...
-
+    <v-card v-for="(event, index) in events" :key=index>
+      <v-card-title>{{ event.wie }}</v-card-title>
+      <v-card-text>
+        <v-row align="center" class="mx-0">
+          <div class="grey--text ms-4">
+            {{ event.podium }}
+          </div>
+        </v-row>
+      </v-card-text>
+    </v-card>
   </div>
 </template>
 <script>
 import Vue from 'vue'
-
-function dag(data) {
-  this.dag = new Date(data.dag)
-  this.when = data.when
-  this.podiums = [];
-  for (let i = 0; i < data.podiums.length; i++) {
-    const mypodium = data.podiums[i];
-      let podium1 = new podium(mypodium);
-      this.podiums.push(podium1)
-    }
-}
-function festivalEvent(data){
-  this.start = new Date(data.start);
-  this.end = new Date(data.end);
-  this.startWhen = data.startWhen
-  this.endWhen = data.endWhen
-  this.wie = data.wie
-}
-
-function podium(data) {
-  this.name = data.name;
-  this.events =[];
-  for (let i = 0; i < data.events.length; i++) {
-    const myevent = data.events[i];
-    let festivalEvent1 = new festivalEvent(myevent);
-    this.events.push(festivalEvent1);
-  }
-  console.log("events:", this.events);
-}
-
-function festival(data) {
-  this.dagen = [];
-  for (let i = 0; i < data.length; i++) {
-    const mydag = data[i];
-    this.dagen.push(new dag(mydag))
-
-  }
-}
+import {festival} from '../domain/Festival.js';
 
 export default {
   data() {
@@ -55,7 +27,9 @@ export default {
     const endpoint = "http://localhost:3000/dagen"
     Vue.axios.get(endpoint).then(response => {
 
-      var fest = new festival(response.data)
+      var fest = festival(response.data)
+      this.events = fest.allEvents()
+
       console.log("response.data", fest)
     });
   }
