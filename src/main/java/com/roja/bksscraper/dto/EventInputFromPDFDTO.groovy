@@ -25,7 +25,7 @@ class EventInputFromPDFDTO {
 
     Optional<BKSEvent> parse(DateTime datum) {
         Optional<BKSEvent> result = Optional.empty()
-        if (text.equals("") || text.startsWith("HOSTED BY")) {
+        if (text.equals("") || text.startsWith("HOSTED BY") || text. startsWith("FOOD,DRINKS")) {
             return result
         }
         try {

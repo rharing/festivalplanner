@@ -27,6 +27,8 @@ class JSONReaderTest extends Specification {
         ObjectMapper objectMapper = new ObjectMapper()
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         def content = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString (dagen).replaceAll("\\s+","")
+        content = """{"dagen":${content} }"""
+        content = content.replaceAll("\\s+","")
         ClassPathResource classPathResource = new ClassPathResource("bks_parsed.json")
         def expected = IoUtil.getText(classPathResource.inputStream).replaceAll("\\s+","")
         then:
