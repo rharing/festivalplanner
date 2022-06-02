@@ -18,7 +18,6 @@ class EventDTO {
     }
 
     EventDTO(BKSEvent event) {
-        this.podium = event.podium.name()
         this.start = event.start.toDate()
         this.startWhen=formatter.print(event.start)
         this.endWhen=formatter.print(event.end)

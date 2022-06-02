@@ -81,7 +81,13 @@ class EventInputFromPDFDTO {
         Optional<DateTime> result = Optional.empty()
         if (timeFields.length == 2) {
             DateTime when = new DateTime(datum).withTimeAtStartOfDay()
-            when = when.plusHours(Integer.parseInt(timeFields[0]))
+            def hours = timeFields[0]
+            if(Integer.parseInt(hours) <10){
+                //new day
+                when = when.plusDays(1)
+            }
+
+            when = when.plusHours(Integer.parseInt(hours))
             when = when.plusMinutes(Integer.parseInt(timeFields[1]))
             result = Optional.of(when)
         }

@@ -12,8 +12,8 @@ export function dag(data) {
     this.allEvents = function() {
         let events = [];
         for(const element of this.podiums) {
-            events.push(element.allEvents);
+           events =  events.concat(element.allEvents());
         }
-        return this.events.sort((a, b) => a.start - b.start)
+        return events.sort((a, b) => a.start - b.start)
     }
 }

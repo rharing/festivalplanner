@@ -8,7 +8,6 @@ public enum PodiumName {
     FLOOR("THE FLOOR"),
     CONEY("CONEY ISLAND"),
     LAKE("LAKE DISTRICT"),
-    LODGE("THE LODGE")
     ;
 
     private String fullname;

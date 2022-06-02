@@ -13,7 +13,10 @@ class PodiumDTO {
     PodiumDTO(Podium podium) {
         this.name = podium.name.name()
         podium.events.each {
-            events.add(new EventDTO(it))
+
+            def eventDTO = new EventDTO(it)
+            eventDTO.podium = this.name
+            events.add(eventDTO)
 
         }
     }

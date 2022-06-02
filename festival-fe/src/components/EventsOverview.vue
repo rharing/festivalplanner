@@ -6,7 +6,7 @@
       <v-card-text>
         <v-row align="center" class="mx-0">
           <div class="grey--text ms-4">
-            {{ event.podium }}
+            <div>{{ event.podium }}</div> <div>{{event.start}}  {{ event.end}}</div>
           </div>
         </v-row>
       </v-card-text>

@@ -19,7 +19,7 @@ class JSONReaderTest extends Specification {
         jsonReader != null
         jsonReader.festival != null
         jsonReader.festival.days.size() == 3
-        jsonReader.festival.days.get(0).podiums.size() == 9
+        jsonReader.festival.days.get(0).podiums.size() == 8
 
         when:
         def dagen = []
