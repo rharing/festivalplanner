@@ -39,10 +39,19 @@ export default new Vuex.Store({
         },
         toggleDag(state, {id}){
             console.log('toggling dag:', id);
+            let allState;
+            if (id ==-2){
+                //make all just like -2
+                state.days[0].filtered = !state.days[0].filtered;
+                allState = state.days[0].filtered;
+            }
             for (let i=0; i<state.days.length;i++){
                 let day = state.days[i];
                 console.log("day", day)
-                if(day.id ==id || id ==-2) {
+                if (id == -2){
+                    day.filtered = allState;
+                }
+                else if(day.id ==id) {
                     day.filtered = !day.filtered;
                 }
             }
