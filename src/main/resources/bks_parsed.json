@@ -327,14 +327,6 @@
           "events": [
             {
               "podium": "LAKE",
-              "start": 1654862400000,
-              "startWhen": "2022-06-1014:00",
-              "endWhen": "2022-06-1016:00",
-              "end": 1654869600000,
-              "wie": "ELIASMAZIAN"
-            },
-            {
-              "podium": "LAKE",
               "start": 1654867800000,
               "startWhen": "2022-06-1015:30",
               "endWhen": "2022-06-1016:30",

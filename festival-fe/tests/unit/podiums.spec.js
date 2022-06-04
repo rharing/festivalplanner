@@ -1,4 +1,5 @@
 import {podiums} from '@/store/podiums'
+import {festival} from "@/domain/Festival";
 
 describe('simple', ()=> {
   it(' first', ()=>{
@@ -8,3 +9,8 @@ describe('simple', ()=> {
 
   })
 });
+describe('festival stuff',()=>{
+    it("dus",()=>{
+        
+    })
+})

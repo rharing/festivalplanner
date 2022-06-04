@@ -7,13 +7,6 @@ export const podiums={
         ,{id:4, name: 'FLOOR', filtered:false}
     ],
     filter(){
-        let result =[];
-        for(let i=0; i<this.data.length;i++){
-           let podium = this.data[i];
-           if(podium.filtered){
-               result.push(podium);
-           }
-        }
-        return result
+        return this.data.filter(podium=> podium.filtered)
     }
 }

@@ -11,7 +11,7 @@ describe('setting up the domain', () => {
                 "wie": "MAVIS\rSTAPLES"
             };
 
-        dinges:FestivalEvent = new  FestivalEvent(input);
+        dinges:FestivalEvent = new FestivalEvent(input, {id:0,name:'One'});
     expect(dinges.wie).toBe("MAVIS\rSTAPLES");
 
     })

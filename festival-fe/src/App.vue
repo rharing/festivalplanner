@@ -13,11 +13,13 @@
         ></v-avatar>
 
         <v-btn
-            v-for="link in dagen"
-            :key="link.id"
-            text
+            v-for="dag in dagen"
+            :key="dag.id"
+            rounded depressed alert green
+            @click="toggleDag(dag.id)"
+            :class="{'lime white--text':dag.filtered}"
         >
-          {{ link.name }}
+   {{dag.name}}
         </v-btn>
 
         <v-spacer></v-spacer>
@@ -35,13 +37,13 @@
             <v-sheet rounded="lg">
               <v-list color="transparent">
                 <v-list-item
-                    v-for="podium in podiums"
+                    v-for="podium in podiums.data"
                     :key="podium.id"
 
                 >
                   <v-list-item-content>
                     <v-list-item-title>
-                     <v-checkbox @click="selectPodium(podium)" :label="podium.name"/>
+                      <v-checkbox @click="selectPodium(podium)" :label="podium.name"/>
                     </v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
@@ -55,7 +57,8 @@
             <v-sheet
                 min-height="70vh"
                 rounded="lg"
-            ><router-view></router-view>
+            >
+              <router-view></router-view>
 
             </v-sheet>
           </v-col>
@@ -67,19 +70,21 @@
 
 <script>
 import {mapState, mapMutations} from 'vuex'
+
 export default {
-  data: () => ({
-  }),
-  methods:{
-    selectPodium(podium){
+  data: () => ({}),
+  methods: {
+    selectPodium(podium) {
       console.log("filtering op ", podium.id);
-      mapMutations()
-      updatePodiumFestival({id: podium.id})
+      this.$store.commit('updatePodiumFestival', {id: podium.id});
+    },
+    toggleDag(id) {
+      this.$store.commit('toggleDag', {id: id});
     }
-  }   ,
-  computed:  {
+  },
+  computed: {
     ...mapState({
-      podiums : state => state.podiums,
+      podiums: state => state.podiums,
       dagen: state => state.days,
     })
   }
