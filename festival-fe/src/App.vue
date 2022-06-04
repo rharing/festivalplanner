@@ -13,11 +13,11 @@
         ></v-avatar>
 
         <v-btn
-            v-for="link in links"
-            :key="link"
+            v-for="link in dagen"
+            :key="link.id"
             text
         >
-          {{ link }}
+          {{ link.name }}
         </v-btn>
 
         <v-spacer></v-spacer>
@@ -36,12 +36,12 @@
               <v-list color="transparent">
                 <v-list-item
                     v-for="podium in podiums"
-                    :key="podium"
+                    :key="podium.id"
 
                 >
                   <v-list-item-content>
                     <v-list-item-title>
-                     <v-checkbox @click="selectPodium(podium)" :label="podium"/>
+                     <v-checkbox @click="selectPodium(podium)" :label="podium.name"/>
                     </v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
@@ -66,28 +66,21 @@
 </template>
 
 <script>
+import {mapState, mapMutations} from 'vuex'
 export default {
   data: () => ({
-    links: [
-      'Alles',
-      'Vrijdag',
-      'Zaterdag',
-      'Zondag',
-        'Fav'
-    ],
-    podiums:[
-        'ONE',
-        'TWO',
-        'SECRET',
-        'CASBAH',
-        'FLOOR'
-
-    ]
   }),
   methods:{
     selectPodium(podium){
-      console.log("filtering op ", podium);
+      console.log("filtering op ", podium.id);
+
     }
+  }   ,
+  computed:  {
+    ...mapState({
+      podiums : state => state.podiums,
+      dagen: state => state.days,
+    })
   }
 }
 </script>
