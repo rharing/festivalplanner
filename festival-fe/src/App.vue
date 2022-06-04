@@ -73,7 +73,8 @@ export default {
   methods:{
     selectPodium(podium){
       console.log("filtering op ", podium.id);
-
+      mapMutations()
+      updatePodiumFestival({id: podium.id})
     }
   }   ,
   computed:  {
