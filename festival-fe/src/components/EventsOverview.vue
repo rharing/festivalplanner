@@ -5,7 +5,8 @@
       <v-card-text>
         <v-row align="center" class="mx-0">
           <div class="grey--text ms-4">
-            <div>{{ event.podium }}</div> <div>{{event.start}}  {{ event.end}}</div>
+            <div>{{ event.podium }}</div>
+            <div>{{ event.start }} {{ event.end }}</div>
           </div>
         </v-row>
       </v-card-text>
@@ -14,22 +15,18 @@
 </template>
 <script>
 import Vue from 'vue'
-import {festival} from '../domain/Festival.js';
+import {mapState, mapGetters} from 'vuex'
 
 export default {
   data() {
-    return {
-      events: []
-    }
+    return {}
   },
-  mounted() {
-    const endpoint = "http://localhost:3000/dagen"
-    Vue.axios.get(endpoint).then(response => {
 
-      var fest = new festival(response.data)
-      this.events = fest.allEvents()
-
-    });
+  computed: {
+    events() {
+      return this.$store.getters.events;
+    }
   }
+
 }
 </script>

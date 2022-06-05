@@ -1,64 +1,38 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import {festival} from "@/domain/Festival";
 
 Vue.use(Vuex)
-import {podiums} from "./podiums";
-
+import {podiums} from "../domain/podiums";
 export default new Vuex.Store({
     state: {
-        festival: undefined
+        festival: new festival([])
         , events: []
-        , days: [
-            {id: -2, name: 'Alles', filtered: false},
-            {id: 0, name: 'Vrijdag', filtered: false},
-            {id: 1, name: 'Zaterdag', filtered: false},
-            {id: 2, name: 'Zondag', filtered: false},
-            {id: 4, name: 'Favs', filtered: false},
-        ]
-        , podiums: podiums
-        ,
-        filterEvents() {
-            let wantedPodiums = this.podiums.filter()
-            this.festival.dagen
-            filterEvent(festivalevent => {
-                if (this.festival) {
-                    festival.allEvents().filter()
-                }
-            })
+        , filterEvents() {
+            this.events = this.festival.filterEvents()
         }
    },
     getters: {
         events: state => state.events
+        ,podiums: state => state.festival.view.podiums
+        ,dagen: state => state.festival.view.dagen
     },
     mutations: {
         updatePodiumFestival(state, {id}) {
             console.log("in mutations got id:", id);
             console.log("state.podiums.data[id]=", state.podiums.data[id]);
-            state.podiums.data[id].filtered = !state.podiums.data[id].filtered;
+            state.podiums.data[id].wanted = !state.podiums.data[id].wanted;
             state.filterEvents()
         },
+
         toggleDag(state, {id}){
             console.log('toggling dag:', id);
-            let allState;
-            if (id ==-2){
-                //make all just like -2
-                state.days[0].filtered = !state.days[0].filtered;
-                allState = state.days[0].filtered;
-            }
-            for (let i=0; i<state.days.length;i++){
-                let day = state.days[i];
-                console.log("day", day)
-                if (id == -2){
-                    day.filtered = allState;
-                }
-                else if(day.id ==id) {
-                    day.filtered = !day.filtered;
-                }
-            }
+                state.festival.view.toggleDag(id);
+            this.state.festival.filterEvents();
         },
-        setFestival(state, {festival}) {
-            state.festival = festival;
-            state.filterEvents();
+        setFestival(state, payload) {
+            state.festival = payload.festival;
+            state.events = state.festival.allEvents();
         }
     },
     actions: {},

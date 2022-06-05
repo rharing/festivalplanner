@@ -18,6 +18,7 @@
     "vue-axios": "^3.4.1",
     "vue-router": "^3.5.1",
     "vuetify": "^2.6.0",
+    "vuetify-nav": "^1.2.1",
     "vuex": "^3.6.2"
   },
   "devDependencies": {

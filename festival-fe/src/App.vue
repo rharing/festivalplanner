@@ -17,9 +17,9 @@
             :key="dag.id"
             rounded depressed alert green
             @click="toggleDag(dag.id)"
-            :class="{'lime white--text':dag.filtered}"
+            :class="{'lime white--text':dag.wanted}"
         >
-   {{dag.name}}
+          {{ dag.name }}
         </v-btn>
 
         <v-spacer></v-spacer>
@@ -58,8 +58,8 @@
                 min-height="70vh"
                 rounded="lg"
             >
-              <router-view></router-view>
-
+              <template v-if="!loaded"><div>loading...</div></template>
+              <template v-else><router-view></router-view></template>
             </v-sheet>
           </v-col>
         </v-row>
@@ -69,10 +69,13 @@
 </template>
 
 <script>
-import {mapState, mapMutations} from 'vuex'
+import { mapState} from 'vuex'
+import Vue from "vue";
+import {festival} from "@/domain/Festival";
 
+let myfestival = new festival([])
 export default {
-  data: () => ({}),
+  data: () => ({loaded: false}),
   methods: {
     selectPodium(podium) {
       console.log("filtering op ", podium.id);
@@ -82,10 +85,20 @@ export default {
       this.$store.commit('toggleDag', {id: id});
     }
   },
+  mounted() {
+    const endpoint = "http://localhost:3000/dagen"
+    Vue.axios.get(endpoint).then(response => {
+
+      var fest = new festival(response.data)
+      this.$store.commit("setFestival", {festival:fest})
+      console.log("done fetching so disable loading");
+      this.loaded = true;
+    });
+  },
   computed: {
     ...mapState({
-      podiums: state => state.podiums,
-      dagen: state => state.days,
+      podiums: state => state.festival.view.podiums,
+      dagen: state => state.festival.view.dagen,
     })
   }
 }

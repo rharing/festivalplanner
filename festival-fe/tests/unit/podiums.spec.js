@@ -1,16 +1,11 @@
-import {podiums} from '@/store/podiums'
-import {festival} from "@/domain/Festival";
+import {podiums} from '@/domain/podiums'
 
 describe('simple', ()=> {
   it(' first', ()=>{
      expect(podiums.data.length).toBe(5);
      podiums.data[0].filtered = true;
-     expect(podiums.filter().length).toBe(1);
-
+      let filter = podiums.filter();
+      expect(filter.length).toBe(1);
+expect(filter.name).toBe("ONE");
   })
 });
-describe('festival stuff',()=>{
-    it("dus",()=>{
-        
-    })
-})
