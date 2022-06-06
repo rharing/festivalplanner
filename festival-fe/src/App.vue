@@ -66,16 +66,13 @@ let myfestival = new festival([])
 export default {
   data: () => ({loaded: false}),
   methods: {
-    selectPodium(podium) {
-      console.log("filtering op ", podium.id);
-      this.$store.commit('updatePodiumFestival', {id: podium.id});
-    },
     toggleDag(id) {
       this.$store.commit('toggleDag', {id: id});
     }
   },
   mounted() {
-    const endpoint = "http://localhost:3000/dagen"
+    const endpoint = process.env.VUE_APP_DATA_URL;
+    console.log("endpoint", endpoint);
     Vue.axios.get(endpoint).then(response => {
 
       var fest = new festival(response.data)
