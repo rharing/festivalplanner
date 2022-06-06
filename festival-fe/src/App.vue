@@ -12,16 +12,7 @@
             size="32"
         ></v-avatar>
 
-        <v-btn
-            v-for="dag in dagen"
-            :key="dag.id"
-            rounded depressed alert green
-            @click="toggleDag(dag.id)"
-            :class="{'lime white--text':dag.wanted}"
-        >
-          {{ dag.name }}
-        </v-btn>
-
+      
         <v-spacer></v-spacer>
 
         <v-responsive max-width="260">
@@ -36,17 +27,15 @@
           <v-col cols="2">
             <v-sheet rounded="lg">
               <v-list color="transparent">
-                <v-list-item
-                    v-for="podium in podiums.data"
-                    :key="podium.id"
-
+                <v-btn
+                    v-for="dag in dagen"
+                    :key="dag.id"
+                    rounded depressed alert green
+                    @click="toggleDag(dag.id)"
+                    :class="{'lime white--text':dag.wanted}"
                 >
-                  <v-list-item-content>
-                    <v-list-item-title>
-                      <v-checkbox @click="selectPodium(podium)" :label="podium.name"/>
-                    </v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
+                  {{ dag.name }}
+                </v-btn>
 
                 <v-divider class="my-2"></v-divider>
               </v-list>
@@ -97,7 +86,6 @@ export default {
   },
   computed: {
     ...mapState({
-      podiums: state => state.festival.view.podiums,
       dagen: state => state.festival.view.dagen,
     })
   }

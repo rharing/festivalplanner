@@ -4,9 +4,9 @@
       <v-card-title>{{ event.wie }}</v-card-title>
       <v-card-text>
         <v-row align="center" class="mx-0">
-          <div class="grey--text ms-4">
-            <div>{{ event.podium }}</div>
-            <div>{{ event.start }} {{ event.end }}</div>
+          <div>
+            <div class ="grey--text ms-4">{{ event.podium }}</div>
+            <div class ="green --text ms-3">{{ event.start | moment("HH:mm") }} {{ event.end| moment("dddd, MMMM Do YYYY") }}</div>
           </div>
         </v-row>
       </v-card-text>

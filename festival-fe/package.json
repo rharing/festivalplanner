@@ -16,6 +16,7 @@
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.14",
     "vue-axios": "^3.4.1",
+    "vue-moment": "^4.1.0",
     "vue-router": "^3.5.1",
     "vuetify": "^2.6.0",
     "vuetify-nav": "^1.2.1",

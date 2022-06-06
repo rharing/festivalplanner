@@ -5,22 +5,35 @@ import {podiums} from './podiums';
 export function festival(data) {
     this.view = {
         dagen: [
-            {id: -2, name: 'Alles', wanted: true},
-            {id: 0, name: 'Vrijdag', wanted: true},
-            {id: 1, name: 'Zaterdag', wanted: true},
-            {id: 2, name: 'Zondag', wanted: true},
-            {id: 4, name: 'Favs', wanted: false},
+            {id: -2, name: 'Alles', wanted: true,isActualdag:false},
+            {id: 0, name: 'Vrijdag', wanted: true,isActualdag:true},
+            {id: 1, name: 'Zaterdag', wanted: true,isActualdag:true},
+            {id: 2, name: 'Zondag', wanted: true,isActualdag:true},
+            {id: 4, name: 'Favs', wanted: false,isActualdag:false},
         ],
         podiums: podiums,
         toggleDag(id){
             let find = this.dagen.find(dag => dag.id == id);
             find.wanted = !find.wanted
             if(id ==-2){
-                //set all dagen to the alles state
-                this.dagen.forEach(dag => dag.wanted = find.wanted)
+                //set all dagen to the alles state but not the favs
+                this.dagen.forEach(dag => {
+                    if (dag.isActualdag){
+                        dag.wanted = find.wanted
+                    }
+                });
+            }
+            else if(id ==4){
+                // clicking favs will only show the favs and not the days
+                this.dagen.forEach(dag => {
+                    if (dag.id !=4){
+                        dag.wanted = false
+                    }
+                });
             }
         }
     }
+    this.favs =[];
     this.dagen = [];
     for (const mydag of data) {
         this.dagen.push(new dag(mydag))
