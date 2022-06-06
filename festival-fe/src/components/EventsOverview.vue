@@ -6,7 +6,7 @@
         <v-row align="center" class="mx-0">
           <div>
             <div class ="grey--text ms-4">{{ event.podium }}</div>
-            <div class ="green --text ms-3">{{ event.start | moment("HH:mm") }} {{ event.end| moment("dddd, MMMM Do YYYY") }}</div>
+            <div class ="green --text ms-3">{{ event.start |tijd }} {{ event.end|tijd }}</div>
           </div>
         </v-row>
       </v-card-text>
@@ -14,9 +14,7 @@
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import {mapState, mapGetters} from 'vuex'
-
+import moment from 'moment'
 export default {
   data() {
     return {}
@@ -25,6 +23,12 @@ export default {
   computed: {
     events() {
       return this.$store.getters.events;
+    }
+  },
+  filters:{
+    tijd: function(value){
+      console.log("value", value);
+      return moment(value).format('HH:mm');
     }
   }
 
