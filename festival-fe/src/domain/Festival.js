@@ -35,11 +35,10 @@ export function festival(data) {
         return events
     }
     this.filterEvents = function(){
-        debugger;
         let events = [];
         let alledagen = this.view.dagen[1].wanted && this.view.dagen[2].wanted && this.view.dagen[3].wanted
         if(!alledagen) {
-            for (let i = 0; i < this.view.dagen.length; i++) {
+            for (let i = 1; i < this.view.dagen.length-1; i++) {
                 let dag = this.view.dagen[i];
                 if(dag.wanted) {
                     events = events.concat(this.dagen[dag.id].allEvents());

@@ -28,7 +28,7 @@ export default new Vuex.Store({
         toggleDag(state, {id}){
             console.log('toggling dag:', id);
                 state.festival.view.toggleDag(id);
-            this.state.festival.filterEvents();
+            this.state.events = this.state.festival.filterEvents();
         },
         setFestival(state, payload) {
             state.festival = payload.festival;
