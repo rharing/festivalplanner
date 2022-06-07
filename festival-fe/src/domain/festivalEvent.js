@@ -5,4 +5,5 @@ export function FestivalEvent(data, podium){
         this.startWhen = data.startWhen
         this.endWhen = data.endWhen
         this.wie = data.wie
+    this.fav = false;
 }
