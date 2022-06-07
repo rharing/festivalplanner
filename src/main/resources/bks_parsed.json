@@ -1021,14 +1021,6 @@
           "events": [
             {
               "podium": "LAKE",
-              "start": 1654938000000,
-              "startWhen": "2022-06-1111:00",
-              "endWhen": "2022-06-1201:30",
-              "end": 1654990200000,
-              "wie": "FOOD,DRINKS,DEPONT,ART&WORKSHOPS,MUZIEKGIETERIJHEAVENSESSIONS,WELLNESSSWELLNESS,WILDERLANDTEA"
-            },
-            {
-              "podium": "LAKE",
               "start": 1654941600000,
               "startWhen": "2022-06-1112:00",
               "endWhen": "2022-06-1114:00",
@@ -1144,14 +1136,7 @@
         {
           "name": "LAKE",
           "events": [
-            {
-              "podium": "LAKE",
-              "start": 1654938000000,
-              "startWhen": "2022-06-1111:00",
-              "endWhen": "2022-06-1201:30",
-              "end": 1654990200000,
-              "wie": "FOOD,DRINKS,DEPONT,ART&WORKSHOPS,MUZIEKGIETERIJHEAVENSESSIONS,WELLNESSSWELLNESS,WILDERLANDTEA"
-            },
+            
             {
               "podium": "LAKE",
               "start": 1654941600000,

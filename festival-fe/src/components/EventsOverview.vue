@@ -27,7 +27,6 @@ export default {
   },
   filters:{
     tijd: function(value){
-      console.log("value", value);
       return moment(value).format('HH:mm');
     }
   }

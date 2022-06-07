@@ -58,7 +58,7 @@ export function festival(data) {
                 }
             }
         }else {
-            events = allEvents();
+            events = this.allEvents();
         }
         return events.sort((a, b) => a.start - b.start)
     }
