@@ -10,10 +10,12 @@ export default new Vuex.Store({
         , events: []
         , filterEvents() {
             this.events = this.festival.filterEvents()
-        }
+        },
+        favs:[]
    },
     getters: {
-        events: state => state.events
+        favs: state => state.favs
+        , events: state => state.events
         ,podiums: state => state.festival.view.podiums
         ,dagen: state => state.festival.view.dagen
     },

@@ -5,7 +5,16 @@
         color="white"
         flat
     >
-
+      <p class="email" v-if="auth === true">{{ email }}</p>
+      <router-link v-if="auth === false" to="/register-user"
+                   class="register">Register
+      </router-link>
+      <v-spacer></v-spacer>
+      <v-btn rounded depressed alert green> <router-link v-if="auth === false" to="/signin"
+                   class="login lime white--text">Login
+      </router-link></v-btn>
+      <p v-if="auth === true" @click="logout" class="info">Log
+        out</p>
       <v-container class="py-0 fill-height">
         <v-avatar
             class="mr-10"
@@ -13,7 +22,7 @@
             size="32"
         ></v-avatar>
 
-      
+
         <v-spacer></v-spacer>
 
         <v-responsive max-width="260">
@@ -48,8 +57,12 @@
                 min-height="70vh"
                 rounded="lg"
             >
-              <template v-if="!loaded"><div>loading...</div></template>
-              <template v-else><router-view></router-view></template>
+              <template v-if="!loaded">
+                <div>loading...</div>
+              </template>
+              <template v-else>
+                <router-view></router-view>
+              </template>
             </v-sheet>
           </v-col>
         </v-row>
@@ -59,17 +72,48 @@
 </template>
 
 <script>
-import { mapState} from 'vuex'
+import {mapState} from 'vuex'
 import Vue from "vue";
 import {festival} from "@/domain/Festival";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
 let myfestival = new festival([])
 export default {
-  data: () => ({loaded: false}),
+  data: () => ({
+    loaded: false,
+    auth: false, email: ''
+  }),
   methods: {
     toggleDag(id) {
       this.$store.commit('toggleDag', {id: id});
+    },
+    logout() {
+      firebase
+          .auth()
+          .signOut()
+          .then(() => {
+            this.$router.push('/');
+          })
+          .catch(error => {
+            alert(error.message);
+            this.$router.push('/');
+          });
     }
+  },
+  created() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.auth = true;
+        let cur_user = firebase.auth().currentUser;
+        var name, email, photoUrl, uid, emailVerified;
+        if (cur_user != null) {
+          this.email = cur_user.email;
+        }
+      } else {
+        this.auth = false;
+      }
+    });
   },
   mounted() {
     const endpoint = process.env.VUE_APP_DATA_URL;
@@ -77,7 +121,7 @@ export default {
     Vue.axios.get(endpoint).then(response => {
 
       var fest = new festival(response.data)
-      this.$store.commit("setFestival", {festival:fest})
+      this.$store.commit("setFestival", {festival: fest})
       console.log("done fetching so disable loading");
       this.loaded = true;
     });
