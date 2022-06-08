@@ -1,12 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import {festival} from "@/domain/Festival";
+import {Festival} from "@/domain/Festival";
 
 Vue.use(Vuex)
-import {podiums} from "../domain/podiums";
 export default new Vuex.Store({
     state: {
-        festival: new festival([])
+        festival: new Festival([])
         , events: []
         , filterEvents() {
             this.events = this.festival.filterEvents()

@@ -1,12 +1,11 @@
 <template>
-  <div class="card">
-    <h5 class="card-header">Dashboard</h5>
-    <div class="card-body">
-      <h5 class="card-title">{{user.displayName}}</h5>
-      <p class="card-text">{{user.email}}</p>
-      <a href="#" class="btn btn-primary" @click="signOut()">Signout</a>
-    </div>
-  </div>
+  <v-card>
+    <v-card-title>Welkom</v-card-title>
+    <v-card-text>
+      <diV>bij het bks overzicht</diV>
+      <div> welke pas zichtbaar wordt na een login of register</div>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>

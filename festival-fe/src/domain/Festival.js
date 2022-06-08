@@ -2,7 +2,7 @@ import {dag} from './dag';
 
 import {podiums} from './podiums';
 
-export function festival(data) {
+export function Festival(data) {
     this.view = {
         dagen: [
             {id: -2, name: 'Alles', wanted: true,isActualdag:false},

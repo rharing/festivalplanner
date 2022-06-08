@@ -1,5 +1,6 @@
 <template>
   <div>
+    events:
     <v-card v-for="(event, index) in events" :key=index>
       <v-card-title>{{ event.wie }}
         <v-card-actions>

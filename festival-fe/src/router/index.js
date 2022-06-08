@@ -7,7 +7,12 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component:() => import('@/components/EventsOverview.vue')
+    component:() => import('@/components/DashboardComponent.vue')
+  },
+  {
+    path: '/events',
+    name: 'eventsView',
+    component: () => import('@/components/EventsOverview.vue')
   },
   {
     path: '/register-user',

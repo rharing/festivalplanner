@@ -5,30 +5,14 @@
         color="white"
         flat
     >
-      <p class="email" v-if="auth === true">{{ email }}</p>
-      <router-link v-if="auth === false" to="/register-user"
-                   class="register">Register
-      </router-link>
-      <v-spacer></v-spacer>
-      <v-btn rounded depressed alert green> <router-link v-if="auth === false" to="/signin"
-                   class="login lime white--text">Login
-      </router-link></v-btn>
-      <p v-if="auth === true" @click="logout" class="info">Log
-        out</p>
-      <v-container class="py-0 fill-height">
-        <v-avatar
-            class="mr-10"
-            color="grey darken-1"
-            size="32"
-        ></v-avatar>
-
-
-        <v-spacer></v-spacer>
-
-        <v-responsive max-width="260">
-
-        </v-responsive>
-      </v-container>
+      <template v-if="auth === true">
+        <p class="email">{{ email }}</p>
+        <v-btn rounded depressed alert green @click="logout" to="" class = "lime white--text">Logout
+        </v-btn>
+      </template>
+      <template v-if="auth === false">
+        <v-btn rounded depressed alert green to="/signin" class = "lime white--text">Login</v-btn>
+      </template>
     </v-app-bar>
 
     <v-main class="grey lighten-3">
@@ -74,11 +58,11 @@
 <script>
 import {mapState} from 'vuex'
 import Vue from "vue";
-import {festival} from "@/domain/Festival";
+import {Festival} from "@/domain/Festival";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
-let myfestival = new festival([])
+let myfestival = new Festival([])
 export default {
   data: () => ({
     loaded: false,
@@ -106,10 +90,10 @@ export default {
       if (user) {
         this.auth = true;
         let cur_user = firebase.auth().currentUser;
-        var name, email, photoUrl, uid, emailVerified;
         if (cur_user != null) {
           this.email = cur_user.email;
         }
+        this.$router.push('/events');
       } else {
         this.auth = false;
       }
@@ -120,7 +104,7 @@ export default {
     console.log("endpoint", endpoint);
     Vue.axios.get(endpoint).then(response => {
 
-      var fest = new festival(response.data)
+      var fest = new Festival(response.data)
       this.$store.commit("setFestival", {festival: fest})
       console.log("done fetching so disable loading");
       this.loaded = true;

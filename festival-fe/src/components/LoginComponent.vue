@@ -43,7 +43,7 @@ export default {
       console.log("submitting");
       firebase.auth()
           .signInWithEmailAndPassword(this.email, this.password).then(() => {
-        this.$router.push('/home')
+        this.$router.push('/events')
       })
           .catch((err) => {
             console.log(err);
