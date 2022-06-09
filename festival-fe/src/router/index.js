@@ -13,26 +13,10 @@ const routes = [
     path: '/events',
     name: 'eventsView',
     component: () => import('@/components/EventsOverview.vue')
-  },
-  {
-    path: '/register-user',
-    name: 'register-user',
-    component: () => import('@/components/RegisterComponent.vue')
-  },
-  {
-    path: '/signin',
-    name: 'signin',
-    component: () => import('@/components/LoginComponent.vue')
-  },
-  {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: () => import('@/components/DashboardComponent.vue')
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

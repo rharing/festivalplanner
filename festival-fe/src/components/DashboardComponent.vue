@@ -3,13 +3,21 @@
     <v-card-title>Welkom</v-card-title>
     <v-card-text>
       <diV>bij het bks overzicht</diV>
-      <div> welke pas zichtbaar wordt na een login of register</div>
+      <div>welke pas zichtbaar wordt na een<router-link to="events">klik hier</router-link></div>
+      <div>nog te doen maar geen tijd meer:<ul>
+        <li> saving of favs in een server zodat je favs overal beschikbaar zijn</li>
+        <li> op favs overzicht wat andere in je groepje fav vinden</li>
+        <li> ohja groepvorming dus</li>
+        <li> op het dag overzicht alleen de events tonen die nog gaan komen</li>
+        <li> op de favs section een teruglooptimer naar je eerste fav event</li>
+        <li>de dagen balk die meescrolt voor snelle dag en favs schakeling</li>
+      </ul>
+      </div>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import firebase from 'firebase/compat/app';
 
 export default {
   data() {
@@ -18,22 +26,8 @@ export default {
     };
   },
   created() {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.user = user;
-      } else {
-        this.user = '';
-      }
-    });
   },
   methods: {
-    signOut() {
-      firebase.auth().signOut().then(() => {
-        firebase.auth().onAuthStateChanged(() => {
-          this.$router.push('/signin')
-        })
-      })
-    }
   }
 };
 </script>

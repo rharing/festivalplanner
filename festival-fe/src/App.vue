@@ -5,14 +5,6 @@
         color="white"
         flat
     >
-      <template v-if="auth === true">
-        <p class="email">{{ email }}</p>
-        <v-btn rounded depressed alert green @click="logout" to="" class = "lime white--text">Logout
-        </v-btn>
-      </template>
-      <template v-if="auth === false">
-        <v-btn rounded depressed alert green to="/signin" class = "lime white--text">Login</v-btn>
-      </template>
     </v-app-bar>
 
     <v-main class="grey lighten-3">
@@ -59,8 +51,6 @@
 import {mapState} from 'vuex'
 import Vue from "vue";
 import {Festival} from "@/domain/Festival";
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
 
 export default {
   data: () => ({
@@ -69,42 +59,17 @@ export default {
   }),
   methods: {
     toggleDag(id) {
-      this.$store.commit('toggleDag', {id: id});
+      this.$store.commit("toggleDagMutation", id)
     },
-    logout() {
-      firebase
-          .auth()
-          .signOut()
-          .then(() => {
-            this.$router.push('/');
-          })
-          .catch(error => {
-            alert(error.message);
-            this.$router.push('/');
-          });
-    }
   },
   created() {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.auth = true;
-        let cur_user = firebase.auth().currentUser;
-        if (cur_user != null) {
-          this.email = cur_user.email;
-        }
-        if (this.$route.path != '/events') {
-          this.$router.push('/events');
-        }
-      } else {
-        this.auth = false;
-      }
-    });
   },
   mounted() {
       // var fest = new Festival(response.data)
       // this.$store.commit("setFestival", {festival: fest})
       // console.log("done fetching so disable loading");
-    this.$router.push('/events');
+    console.log("mounted so starting by selecting all");
+    this.$store.commit("toggleDagMutation", -2)
 
     // });
     console.log("app.vue mounted")
@@ -112,7 +77,6 @@ export default {
     console.log(" found favs:", favs);
     this.$store.commit('setFavs',favs);
     this.loaded = true;
-
   },
   computed: {
     ...mapState({

@@ -6,17 +6,18 @@ export function Festival(data) {
 
     this.view = {
         dagen: [
-            {id: -2, name: 'Alles', wanted: true,isActualdag:false},
-            {id: 0, name: 'Vrijdag', wanted: true,isActualdag:true},
-            {id: 1, name: 'Zaterdag', wanted: true,isActualdag:true},
-            {id: 2, name: 'Zondag', wanted: true,isActualdag:true},
+            {id: -2, name: 'Alles', wanted: false,isActualdag:false},
+            {id: 0, name: 'Vrijdag', wanted: false,isActualdag:true},
+            {id: 1, name: 'Zaterdag', wanted: false,isActualdag:true},
+            {id: 2, name: 'Zondag', wanted: false,isActualdag:true},
             {id: 4, name: 'Favs', wanted: false,isActualdag:false},
         ],
         podiums: podiums,
         toggleDag(id){
-            let find = this.dagen.find(dag => dag.id == id);
+            let find = this.dagen.find((dag) => dag.id == id);
             find.wanted = !find.wanted
             if (find.isActualdag){
+                // clicking a dag disables favs selection
                 this.dagen[4].wanted = false;
             }
             if(id ==-2){
@@ -27,6 +28,7 @@ export function Festival(data) {
                     }
                 });
             }
+
             else if(id ==4){
                 // clicking favs will only show the favs and not the days
                 this.dagen.forEach(dag => {

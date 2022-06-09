@@ -30,6 +30,7 @@ export default {
   },
    mounted(){
      console.log("mounted events");
+     this.$store.commit("toggleDag",-2);
    },
   computed: {
     events() {

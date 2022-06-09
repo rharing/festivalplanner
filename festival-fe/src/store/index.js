@@ -36,6 +36,9 @@ export default new Vuex.Store({
                 }
             } else {
                 this.state.favs = this.state.favs.filter((storedevent) => storedevent != event)
+                this.state.favs.sort((a, b) => a.start - b.start)
+                localStorage.setItem("bks_favs", JSON.stringify(this.state.favs));
+
             }
         },
         setFavs(state, favs){
@@ -43,15 +46,19 @@ export default new Vuex.Store({
             let favElements = state.festival.allEvents().filter((element)=> favs.some((favElement)=> favElement.wie ==element.wie));
             favElements.forEach((element)=>element.fav = true);
         },
-        toggleDag(state, {id}) {
+        toggleDagMutation(state, payload) {
+            let id = payload
+            if(payload?.id){
+                id = payload.id
+            }
             state.festival.view.toggleDag(id);
             if(id ==4){
-                this.state.showingFavs=true
-                this.state.events = this.state.favs;
+                state.showingFavs=true
+                state.events = this.state.favs;
             }
             else {
-                this.state.events = this.state.festival.filterEvents();
-                this.state.showingFavs=false
+                state.events = this.state.festival.filterEvents();
+                state.showingFavs=false
 
             }
         },
