@@ -40,7 +40,6 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log("submitting");
       firebase.auth()
           .signInWithEmailAndPassword(this.email, this.password).then(() => {
         this.$router.push('/events')

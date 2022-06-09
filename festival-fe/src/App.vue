@@ -62,7 +62,6 @@ import {Festival} from "@/domain/Festival";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
-let myfestival = new Festival([])
 export default {
   data: () => ({
     loaded: false,
@@ -93,22 +92,22 @@ export default {
         if (cur_user != null) {
           this.email = cur_user.email;
         }
-        this.$router.push('/events');
+        if (this.$route.path != '/events') {
+          this.$router.push('/events');
+        }
       } else {
         this.auth = false;
       }
     });
   },
   mounted() {
-    const endpoint = process.env.VUE_APP_DATA_URL;
-    console.log("endpoint", endpoint);
-    Vue.axios.get(endpoint).then(response => {
+      // var fest = new Festival(response.data)
+      // this.$store.commit("setFestival", {festival: fest})
+      // console.log("done fetching so disable loading");
+    // });
+    console.log("app.vue mounted")
+    this.loaded = true;
 
-      var fest = new Festival(response.data)
-      this.$store.commit("setFestival", {festival: fest})
-      console.log("done fetching so disable loading");
-      this.loaded = true;
-    });
   },
   computed: {
     ...mapState({

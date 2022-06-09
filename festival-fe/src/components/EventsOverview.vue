@@ -26,24 +26,25 @@ import moment from 'moment'
 
 export default {
   data() {
-    return {favs: []}
+    return {}
   },
-
+   mounted(){
+     console.log("mounted events");
+   },
   computed: {
     events() {
-      return this.$store.getters.events;
+      let events = this.$store.getters.events;
+      console.log("events", events);
+      return events;
+    } ,
+    favs(){
+      return this.$store.getters.favs;
+
     }
   },
   methods: {
     fav: function (event) {
-      event.fav = !event.fav;
-      if (event.fav) {
-        if (!this.favs.includes(event)) {
-          this.favs.push(event);
-        }
-      } else {
-        this.favs = this.favs.filter((storedevent) => storedevent != event)
-      }
+      this.$store.commit("toggleFav", event);
     }
   },
   filters: {

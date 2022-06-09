@@ -3,6 +3,7 @@ import {dag} from './dag';
 import {podiums} from './podiums';
 
 export function Festival(data) {
+
     this.view = {
         dagen: [
             {id: -2, name: 'Alles', wanted: true,isActualdag:false},
@@ -33,6 +34,7 @@ export function Festival(data) {
             }
         }
     }
+    console.log("starting festival with", data)
     this.favs =[];
     this.dagen = [];
     for (const mydag of data) {
