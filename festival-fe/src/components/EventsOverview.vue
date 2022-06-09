@@ -14,7 +14,7 @@
         <v-row align="center" class="mx-0">
           <div>
             <div class="grey--text ms-4">{{ event.podium }}</div>
-            <div class="green --text ms-3">{{ event.start |tijd }} {{ event.end|tijd }}</div>
+            <div class="green --text ms-3">{{ event.start |tijd(showingFavs) }} {{ event.end|tijd(showingFavs) }}</div>
           </div>
         </v-row>
       </v-card-text>
@@ -37,18 +37,24 @@ export default {
       console.log("events", events);
       return events;
     } ,
-    favs(){
+    favs() {
       return this.$store.getters.favs;
-
+    }
+    ,
+    showingFavs(){
+      return this.$store.state.showingFavs;
     }
   },
   methods: {
     fav: function (event) {
-      this.$store.commit("toggleFav", event);
+      this.$store.commit("togglefav", event);
     }
   },
   filters: {
-    tijd: function (value) {
+    tijd: function (value, showingfavs) {
+      if (showingfavs)
+        return moment(value).format('dddd HH:mm'
+      )
       return moment(value).format('HH:mm');
     },
     favSign: function (value) {

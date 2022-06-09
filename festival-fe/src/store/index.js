@@ -10,9 +10,11 @@ export default new Vuex.Store({
         festival: new Festival(data.dagen)
         , events: []
         , filterEvents() {
-            this.events = this.festival.filterEvents()
+            this.events = this.festival.allEvents()
+            console.log(" this.events", this.events);
         },
-        favs: []
+        favs: [],
+        showingFavs: false
     },
     getters: {
         favs: state => state.favs
@@ -27,21 +29,29 @@ export default new Vuex.Store({
             state.podiums.data[id].wanted = !state.podiums.data[id].wanted;
             state.filterEvents()
         },
-        togglefav(state, payload) {
-            payload.event.fav = !payload.event.fav;
-            if (payload.event.fav) {
-                if (!this.favs.includes(payload.event)) {
-                    this.favs.push(payload.event);
+        togglefav(state, event) {
+            event.fav = !event.fav;
+            if (event.fav) {
+                if (!this.state.favs.includes(event)) {
+                    this.state.favs.push(event);
+                    localStorage.setItem("bks_favs", JSON.stringify(this.state.favs));
                 }
             } else {
-                this.favs = this.favs.filter((storedevent) => storedevent != payload.event)
+                this.state.favs = this.state.favs.filter((storedevent) => storedevent != event)
             }
         },
 
         toggleDag(state, {id}) {
-            console.log('toggling dag:', id);
             state.festival.view.toggleDag(id);
-            this.state.events = this.state.festival.filterEvents();
+            if(id ==4){
+                this.state.showingFavs=true
+                this.state.events = this.state.favs;
+            }
+            else {
+                this.state.events = this.state.festival.filterEvents();
+                this.state.showingFavs=false
+
+            }
         },
         setFestival(state, payload) {
             state.festival = payload.festival;

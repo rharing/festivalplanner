@@ -16,6 +16,9 @@ export function Festival(data) {
         toggleDag(id){
             let find = this.dagen.find(dag => dag.id == id);
             find.wanted = !find.wanted
+            if (find.isActualdag){
+                this.dagen[4].wanted = false;
+            }
             if(id ==-2){
                 //set all dagen to the alles state but not the favs
                 this.dagen.forEach(dag => {
@@ -31,10 +34,10 @@ export function Festival(data) {
                         dag.wanted = false
                     }
                 });
+               
             }
         }
     }
-    console.log("starting festival with", data)
     this.favs =[];
     this.dagen = [];
     for (const mydag of data) {

@@ -106,6 +106,11 @@ export default {
       // console.log("done fetching so disable loading");
     // });
     console.log("app.vue mounted")
+    let favs = JSON.parse(localStorage.getItem('favs_bks'));
+    console.log(" found favs:", favs);
+    if(favs) {
+      this.$store.state.favs = favs
+    }
     this.loaded = true;
 
   },
