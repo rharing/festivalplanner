@@ -11,7 +11,6 @@ export default new Vuex.Store({
         , events: []
         , filterEvents() {
             this.events = this.festival.allEvents()
-            console.log(" this.events", this.events);
         },
         favs: [],
         showingFavs: false
@@ -24,8 +23,6 @@ export default new Vuex.Store({
     },
     mutations: {
         updatePodiumFestival(state, {id}) {
-            console.log("in mutations got id:", id);
-            console.log("state.podiums.data[id]=", state.podiums.data[id]);
             state.podiums.data[id].wanted = !state.podiums.data[id].wanted;
             state.filterEvents()
         },
@@ -34,13 +31,18 @@ export default new Vuex.Store({
             if (event.fav) {
                 if (!this.state.favs.includes(event)) {
                     this.state.favs.push(event);
+                    this.state.favs.sort((a, b) => a.start - b.start)
                     localStorage.setItem("bks_favs", JSON.stringify(this.state.favs));
                 }
             } else {
                 this.state.favs = this.state.favs.filter((storedevent) => storedevent != event)
             }
         },
-
+        setFavs(state, favs){
+            state.favs = favs;
+            let favElements = state.festival.allEvents().filter((element)=> favs.some((favElement)=> favElement.wie ==element.wie));
+            favElements.forEach((element)=>element.fav = true);
+        },
         toggleDag(state, {id}) {
             state.festival.view.toggleDag(id);
             if(id ==4){

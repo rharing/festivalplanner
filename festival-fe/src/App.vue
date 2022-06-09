@@ -104,13 +104,13 @@ export default {
       // var fest = new Festival(response.data)
       // this.$store.commit("setFestival", {festival: fest})
       // console.log("done fetching so disable loading");
+    this.$router.push('/events');
+
     // });
     console.log("app.vue mounted")
-    let favs = JSON.parse(localStorage.getItem('favs_bks'));
+    let favs = JSON.parse(localStorage.getItem('bks_favs'));
     console.log(" found favs:", favs);
-    if(favs) {
-      this.$store.state.favs = favs
-    }
+    this.$store.commit('setFavs',favs);
     this.loaded = true;
 
   },
