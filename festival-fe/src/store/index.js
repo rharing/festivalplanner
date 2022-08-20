@@ -32,12 +32,12 @@ export default new Vuex.Store({
                 if (!this.state.favs.includes(event)) {
                     this.state.favs.push(event);
                     this.state.favs.sort((a, b) => a.start - b.start)
-                    localStorage.setItem("bks_favs", JSON.stringify(this.state.favs));
+                    // localStorage.setItem("bks_favs", JSON.stringify(this.state.favs));
                 }
             } else {
                 this.state.favs = this.state.favs.filter((storedevent) => storedevent != event)
                 this.state.favs.sort((a, b) => a.start - b.start)
-                localStorage.setItem("bks_favs", JSON.stringify(this.state.favs));
+                // localStorage.setItem("bks_favs", JSON.stringify(this.state.favs));
 
             }
         },

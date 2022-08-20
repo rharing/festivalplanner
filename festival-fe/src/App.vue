@@ -34,7 +34,7 @@
                 rounded="lg"
             >
               <template v-if="!loaded">
-                <div>loading...</div>
+                <div>loading... {{build}}</div>
               </template>
               <template v-else>
                 <router-view></router-view>
@@ -49,12 +49,9 @@
 
 <script>
 import {mapState} from 'vuex'
-import Vue from "vue";
-import {Festival} from "@/domain/Festival";
-
 export default {
   data: () => ({
-    loaded: false,
+    loaded: false, build: new Date().toISOString(),
     auth: false, email: ''
   }),
   methods: {
@@ -70,12 +67,12 @@ export default {
       // console.log("done fetching so disable loading");
     console.log("mounted so starting by selecting all");
     this.$store.commit("toggleDagMutation", -2)
-
+        this.loaded = true;
     // });
     console.log("app.vue mounted")
-    let favs = JSON.parse(localStorage.getItem('bks_favs'));
-    console.log(" found favs:", favs);
-    this.$store.commit('setFavs',favs);
+    // let favs = JSON.parse(localStorage.getItem('bks_favs'));
+    // console.log(" found favs:", favs);
+    // this.$store.commit('setFavs',favs);
     this.loaded = true;
   },
   computed: {
